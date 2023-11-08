@@ -1,0 +1,140 @@
+@import '../../../styles/mixins';
+.mainContainer {
+    padding: 64px 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: $mobile-screen) {
+        padding: 64px 3% 0 3%;
+    }
+
+    .title {
+        @include spaced-out-title;
+    }
+
+    .physicsPoster {
+        width: 100%;
+        background: url('../../../assets/learn/physicsposter.png') no-repeat
+            center/cover;
+        height: 484px;
+        margin: 64px 0;
+        padding: 0 5%;
+        border-radius: 24px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .courseButton {
+            display: flex;
+            padding: 12px 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 32px;
+            margin-top: 22px;
+            color: #40444a;
+        }
+
+        @media screen and (max-width: $tablet-screen) {
+            padding: 48px 16px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+
+    .middleSection {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: url('../../../assets/learn/middletext.png') no-repeat
+            center/cover;
+        margin: 64px 0;
+        .middleText {
+            width: 771px;
+            text-align: center;
+            font-size: 68.406px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -2.052px;
+            @include black-gradient;
+
+            @media screen and (max-width: $tablet-screen) {
+                font-size: 48px;
+                letter-spacing: -1.44px;
+            }
+        }
+    }
+
+    .logicSection {
+        margin: 32px 0 82px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        height: 336px;
+
+        > div {
+            border-radius: 24px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .question {
+            flex: 0.5;
+            background:
+                linear-gradient(
+                    262deg,
+                    rgba(0, 0, 0, 0) 22.37%,
+                    rgba(0, 0, 0, 0.65) 132.35%
+                ),
+                url('../../../assets/learn/justonecourse.png') no-repeat
+                    center/cover,
+                linear-gradient(45deg, #000 0%, #362014 100%);
+            .questionText {
+                width: 50%;
+                text-align: center;
+
+                @media screen and (max-width: $desktop-screen) {
+                    width: 70%;
+                }
+            }
+
+            .mobileanswerText {
+                width: 90%;
+            }
+
+            @media screen and (min-width: $tablet-screen) {
+                .mobileanswerText {
+                    display: none;
+                }
+            }
+        }
+
+        .answer {
+            flex: 0.5;
+            background: linear-gradient(45deg, #000 0%, #362014 100%);
+            .answerText {
+                width: 70%;
+            }
+        }
+
+        @media screen and (max-width: $tablet-screen) {
+            .question {
+                flex: 1;
+                flex-direction: column;
+
+                .questionText {
+                    width: 90%;
+                    text-align: left;
+                    margin-bottom: 16px;
+                }
+            }
+            .answer {
+                display: none;
+            }
+        }
+    }
+}

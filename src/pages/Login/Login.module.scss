@@ -1,0 +1,45 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentContainer {
+    width: 420px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 0; // can be set to 10% too
+
+    > * {
+        margin: 5px 0;
+    }
+
+    .formContainer {
+        width: 100%;
+        margin: 20px 0;
+
+        .emailInput {
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .passwordInput {
+            width: 100%;
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        .continueButton {
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px 18px;
+            border-radius: 32px;
+        }
+    }
+
+    .signupContainer {
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+    }
+}

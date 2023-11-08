@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.navbarContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: $hexaLightBackground;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 0;
+}

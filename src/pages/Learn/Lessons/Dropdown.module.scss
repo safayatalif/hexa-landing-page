@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+.lessonInfo {
+    width: 100%;
+    margin-bottom: 12px;
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        background: linear-gradient(13deg, #000 -121.51%, #0e7090 72.93%);
+        padding: 26px 32px;
+        width: 100%;
+
+        .dropdownIcon {
+            height: 24px;
+            width: 24px;
+            float: right;
+            transition: transform 0.3s ease;
+        }
+
+        .iconUp {
+            transform: rotate(180deg);
+        }
+    }
+
+    .dropdowns {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        margin: 12px 0;
+
+        .dropdown {
+            width: 95%;
+            padding: 26px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+            border: 0.5px solid $hexaPrimaryBlue700;
+
+            .button {
+                padding: 12px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border-radius: 32px;
+            }
+        }
+    }
+}

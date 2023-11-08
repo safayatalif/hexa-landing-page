@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+    "eslint.validate": [
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "javascriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.workingDirectories": ["./", "!**/dist/"],
+  "eslint.format.enable": true,
+  "prettier.singleQuote": true
+}

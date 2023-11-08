@@ -1,0 +1,40 @@
+// Colors
+$primary-color: #007bff;
+$hexaLightBackground: rgba(249, 250, 251, 0.8);
+$hexaWhite: rgb(255, 255, 255);
+$hexaMoss400: var(--moss-400, #86cb3c);
+$hexaSuccess400: var(--success-400, #32d583);
+$hexaError400: var(--error-400, #f97066);
+$hexaGrey: var(--gray-500, #727479);
+$hexaGrey50: #f9fafb;
+$hexaGrey300: var(--gray-300, #d4d6d9);
+$hexaGrey400: var(--gray-400, #a1a5aa);
+$hexaGrey700: var(--gray-700, #344054);
+$hexaGrey900: var(--gray-900, #181d20);
+$hexaGrey600: var(--gray-600, #51565c);
+$hexaLightGrey: var(--gray-200, #ecedee);
+$hexaPrimaryBlue700: #0e7090;
+$hexaPrimaryBlue800: #155b75;
+$hexaPrimaryBlue900: #164c63;
+$hexaGradientBlue: var(
+    --gradient-primary-80060045-deg,
+    linear-gradient(45deg, #155b75 0%, #088ab2 100%)
+);
+$hexaGradientBlue2: var(
+    --gradient-primary-9006000-deg,
+    linear-gradient(14deg, #164c63 10.22%, #088ab2 100%)
+);
+$hexaGradientGrey: var(
+    --gradient-gray-90060045-deg,
+    linear-gradient(45deg, #101828 0%, #475467 100%)
+);
+
+$hexaInputBorder: var(--gray-300, #d4d6d9);
+$hexaInputBackground: var(--base-white, #fff);
+$hexaInputPlaceholderGrey: var(--gray-400, #a1a5aa);
+
+// Breakpoints
+$wide-desktop-screen: 1920px;
+$desktop-screen: 1440px;
+$tablet-screen: 768px;
+$mobile-screen: 430px;

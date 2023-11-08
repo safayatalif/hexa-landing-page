@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.primaryInputContainer {
+    border: 1px solid $hexaInputBorder;
+    background: $hexaInputBackground;
+    padding: 10px 14px;
+
+    &::placeholder {
+        color: $hexaInputPlaceholderGrey;
+    }
+}

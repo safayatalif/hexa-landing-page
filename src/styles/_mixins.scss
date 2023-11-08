@@ -1,0 +1,40 @@
+@import './variables';
+
+@mixin blue-gradient {
+    background: $hexaGradientBlue;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin grey-gradient {
+    background: $hexaGradientGrey;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin black-gradient {
+    background: var(
+        --gradient-gray-90060045-deg,
+        linear-gradient(45deg, #101828 0%, #475467 100%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin spaced-out-title {
+    color: var(--gray-700, #40444a);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 44px;
+    letter-spacing: 16.4px;
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 12px;
+        letter-spacing: 12.3px;
+    }
+}

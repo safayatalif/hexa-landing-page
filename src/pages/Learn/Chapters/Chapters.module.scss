@@ -1,0 +1,34 @@
+@import '../../../styles/mixins';
+
+.pageContainer {
+    position: relative;
+    min-height: 100vh;
+
+    .mainContainer {
+        padding: 64px 10% 0 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: $tablet-screen) {
+            padding: 64px 3% 0 3%;
+        }
+
+        .title {
+            @include spaced-out-title;
+        }
+        .curriculum {
+            margin-bottom: 64px;
+
+            @media screen and (max-width: $mobile-screen) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    // .footer {
+    //     position: absolute;
+    //     bottom: 0;
+    // }
+}

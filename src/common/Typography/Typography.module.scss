@@ -1,0 +1,336 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.default {
+    font-style: normal;
+    text-align: center;
+}
+
+// text styling
+.title-2xl-semibold {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: -2.16px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -1.8px;
+    }
+}
+
+.title-xl-semibold {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -1.8px;
+}
+
+.title-2xl-medium {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: -2.16px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -1.8px;
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: -1.44px;
+    }
+}
+
+.title-xl-medium {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -1.8px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: -1.44px;
+    }
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -1.08px;
+    }
+}
+
+.title-lg-medium {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -1.08px;
+    }
+}
+
+.title-md-semibold {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -1.08px;
+}
+
+.title-md-medium {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -1.08px;
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.72px;
+    }
+}
+
+.title-sm-medium {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.9px;
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.72px;
+    }
+}
+
+.title-xs-medium {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.54px;
+    }
+}
+
+.title-xs-regular {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.54px;
+    }
+}
+
+.title-sm-regular {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.9px;
+}
+
+.text-xl-regular {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.6px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.48px;
+    }
+}
+
+.text-xl-semibold {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.6px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.48px;
+    }
+}
+
+.text-lg-regular {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.48px;
+    }
+}
+
+.text-lg-semibold {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.48px;
+    }
+}
+
+.text-lg-medium {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+}
+
+.text-xl-medium {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.6px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.48px;
+    }
+}
+
+.text-sm-regular {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.42px;
+
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: -0.36px;
+    }
+}
+
+.text-sm-semibold {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.42px;
+}
+
+.text-sm-medium {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.42px;
+}
+
+.text-xs-regular {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.36px;
+}
+
+.text-md-semibold {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.48px;
+}
+
+.text-md-medium {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.48px;
+}
+
+.text-md-regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.48px;
+}
+
+// colors
+.blue-gdnt {
+    @include blue-gradient;
+}
+
+.blue-primary-700 {
+    color: $hexaPrimaryBlue700;
+}
+
+.blue-primary-800 {
+    color: $hexaPrimaryBlue800;
+}
+
+.blue-primary-900 {
+    color: $hexaPrimaryBlue900;
+}
+
+.grey {
+    color: $hexaGrey;
+}
+
+.grey-900 {
+    color: $hexaGrey900;
+}
+
+.grey-700 {
+    color: $hexaGrey700;
+}
+
+.grey-600 {
+    color: $hexaGrey600;
+}
+
+.grey-300 {
+    color: $hexaGrey300;
+}
+
+.grey-50 {
+    color: $hexaGrey50;
+}
+
+.grey-gradient {
+    @include grey-gradient;
+}
+
+.white {
+    color: $hexaWhite;
+}
+
+// aligment
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}

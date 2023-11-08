@@ -1,0 +1,57 @@
+@import '../../../styles/mixins';
+
+.pageContainer {
+    position: relative;
+    min-height: 100vh;
+
+    .mainContainer {
+        padding: 64px 10% 0 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: $tablet-screen) {
+            padding: 64px 3% 0 3%;
+        }
+        .title {
+            @include spaced-out-title;
+        }
+
+        .video {
+            margin-top: 64px;
+        }
+
+        .contentContainer {
+            margin: 64px 0;
+            width: 100%;
+        }
+
+        .endContainer {
+            margin: 64px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 56px 0;
+            background: linear-gradient(
+                180deg,
+                rgba(231, 231, 231, 0.2) 0%,
+                rgba(231, 231, 231, 0) 100%
+            );
+            border-radius: 20px;
+            width: 100%;
+
+            .button {
+                padding: 12px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                border-radius: 32px;
+                border: 1px solid $hexaGrey300;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.default {
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.primary {
+    background: $hexaGradientBlue;
+    border: none;
+}
+
+.secondary {
+    background: white;
+    border: 0.3px solid $hexaGrey900;
+}
+
+.correct {
+    border: none;
+    background: $hexaMoss400;
+}
+
+.success {
+    border: none;
+    background: $hexaSuccess400;
+}
+
+.error {
+    border: none;
+    background: $hexaError400;
+}

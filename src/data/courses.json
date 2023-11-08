@@ -1,0 +1,503 @@
+{
+    "physics": {
+        "id": "physics",
+        "curriculum": "CIE O Level",
+        "heading": "Welcome to the world of Physics! Here you will be learning a plethora of fascinating topics from your CIE O Level syllabus, along with a thorough understanding of an incredibly important set of concepts that physicists today work with.",
+        "instructor": {
+            "name": "Robin Biswas",
+            "degree": "MSc in Electronics & Solid State Physics, Chittagong University"
+        },
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Chapter 1: Motion, Forces and Energy",
+                "description": "In this chapter, you will delve into the fundamental principles of motion, forces, and energy. You will explore the relationship between objects in motion and the forces acting upon them, gaining a deeper understanding of how these forces influence the motion of objects. Additionally, you will learn about the concept of energy and how it is related to motion and forces. By the end of this chapter, you will have a solid grasp of the essential principles and formulas that underpin the study of motion, forces, and energy.",
+                "lessons": [
+                    {
+                        "id": 1,
+                        "description": "Physical quantities and measurement techniques",
+                        "free_available": false,
+                        "sublessons": [
+                            {
+                                "id": 1,
+                                "title": "Understanding Measuring techniques",
+                                "content": [
+                                    {
+                                        "type": "video",
+                                        "url": "https://hexa-application.s3.us-east-2.amazonaws.com/Chapter+1+Motion%2C+Force+and+Energy/1.1.1.mov"
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Dive into the World of Physical Quantities and Measurement Techniques!"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "In this discussion, we'll explore fundamental concepts related to things like length (how long stuff is), volume (how much space things occupy), and other essential ideas. We'll also cover the topic about time and vectors."
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Introduction to Physical Quantities"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Physical quantities are fundamental attributes of objects or phenomena that we measure to better understand the world around us. They encompass a wide range of properties, including length, time, volume, and more. Each physical quantity is characterized by two key aspects: magnitude and unit. The magnitude indicates the size or extent of the quantity, while the unit provides a standardized way to express and compare measurements."
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "To illustrate, consider the measurement of length. Length can be quantified using various units, such as meters, centimetres, or inches, depending on the context. Typically, scales or measuring instruments like rulers and tapes are employed for length measurements. However, when precise measurements of very small lengths are required, specialized tools like micrometres come into play."
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Measuring Length Precisely"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Using Screw Gauge (Micrometre): A screw gauge, or micrometre, is a tool designed for highly accurate length measurements, especially when dealing with very small objects. To use a micrometre, you first 'zero' it, ensuring there is no gap between its measuring surfaces. Then, you gently close the micrometre jaws around the object to be measured. Reading involves two parts: the main scale reading and the Vernier scale reading. The main scale is on the fixed jaw, while the Vernier scale is on the sliding jaw."
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "The formula for calculating the measurement is: Measurement = Main Scale Reading + (Circular Scale Reading × Least Count). The least count is the smallest division on the Vernier scale, typically representing 0.01 mm or 0.001 inch. While micrometres are highly precise, they are not suitable for measuring objects as small as a human hair's breadth (about 75 micrometres). To measure such tiny lengths, advanced technology involving lasers and computers is required."
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Measuring Volume of Regular Shapes with a Screw Gauge"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "When measuring the volume of regular geometric shapes like cubes, cylinders, and spheres using a screw gauge (micrometre), precision is key. Here's how you can do it:"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Cube"
+                                    },
+                                    {
+                                        "type": "u_bullets",
+                                        "items": [
+                                            "Measure the length of one side of the cube using the screw gauge.",
+                                            "To find the volume, raise this side length to the power of three (V = side^3)."
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Sphere"
+                                    },
+                                    {
+                                        "type": "u_bullets",
+                                        "items": [
+                                            "Measure the diameter of the sphere using the screw gauge.",
+                                            "Calculate the volume using the formula: V = 4/3 × π × (radius cubed).",
+                                            "The diameter measurement from the screw gauge can be used as the radius in the formula."
+                                        ]
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Measuring Volume of irregular Shapes"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Irregularly shaped objects require a different approach for volume measurement. The water displacement method is used. You submerge the solid in a measuring cylinder filled with water and measure the increase in water volume. This increase in volume equals the volume of the irregular solid. If the object isn't fully submerged, another method is to pour a known volume of water into a container, then submerge the solid. The change in water volume is equivalent to the volume of the irregular solid."
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Measuring Time"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Time is a fundamental physical quantity, and we measure it in units like seconds, minutes, or hours. Clocks are devices used to measure time. They have evolved from simple sundials to modern battery-operated clocks. Pendulums are fascinating timekeeping tools. They work by swinging back and forth, and their motion allows for precise time measurement. The number of oscillations or swings of a pendulum in a specific time period is counted to measure time with great accuracy. By measuring the time taken for a specific number of swings, we can determine the period (T) of the pendulum. The period of a pendulum can be calculated using the formula:"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "T = 2π√(L/g)"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "where L represents the length of the pendulum and g denotes the acceleration due to gravity."
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Adding Vectors"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Vectors are quantities that possess both magnitude and direction. When vectors are parallel (meaning they have the same direction), you can add or subtract them by simply combining their magnitudes. For instance, if you have two vectors of 3 units and 5 units in the same direction, the result of adding them is a vector of 8 units in that direction. When vectors are not parallel (they have different directions), you use graphical methods or trigonometry to add or subtract them. The parallelogram law is employed to find the resultant of non-parallel vectors. Imagine the vectors as two adjacent sides of a parallelogram, and then complete the drawing to visualize the diagonal. This diagonal represents the resultant vector, and with some mathematical calculations, you can determine its length and angle."
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Summary"
+                                    },
+                                    {
+                                        "type": "u_bullets",
+                                        "items": [
+                                            "Practice measuring length, volume, and time using appropriate tools and methods.",
+                                            "Understand that precision in measurements is essential for scientific accuracy.",
+                                            "Experiment with vector addition and gain proficiency in handling vectors with different orientations.",
+                                            "Explore the fascinating world of physics and its practical applications in everyday life."
+                                        ]
+                                    },
+                                    {
+                                        "type": "mcq",
+                                        "question": "Which tool is best suited for measuring the length of a long piece of lumber?",
+                                        "options": [
+                                            {
+                                                "id": 1,
+                                                "text": "Ruler"
+                                            },
+                                            {
+                                                "id": 2,
+                                                "text": "Tape Measure"
+                                            },
+                                            {
+                                                "id": 3,
+                                                "text": "Micrometer"
+                                            },
+                                            {
+                                                "id": 4,
+                                                "text": "Calliper"
+                                            }
+                                        ],
+                                        "answer": 2,
+                                        "solution": "Tape measures are designed for measuring longer distances, such as the length of a piece of lumber. Rulers and micrometers are better suited for shorter distances."
+                                    },
+                                    {
+                                        "type": "mcq",
+                                        "question": "How do you read an analog micrometer?",
+                                        "options": [
+                                            {
+                                                "id": 1,
+                                                "text": "Read the number on the sleeve."
+                                            },
+                                            {
+                                                "id": 2,
+                                                "text": "Count the number of revolutions on the thimble."
+                                            },
+                                            {
+                                                "id": 3,
+                                                "text": "Add the number on the sleeve to the number of revolutions on the thimble."
+                                            },
+                                            {
+                                                "id": 4,
+                                                "text": "Subtract the number on the sleeve from the number of revolutions on the thimble."
+                                            }
+                                        ],
+                                        "answer": 3,
+                                        "solution": "To read an analog micrometer, you must count the number of revolutions on the thimble and add it to the number on the sleeve. The sleeve will typically have markings that indicate fractions of a millimetre or inch."
+                                    },
+                                    {
+                                        "type": "mcq",
+                                        "question": "What is the advantage of using a digital micrometer over an analog micrometer?",
+                                        "options": [
+                                            {
+                                                "id": 1,
+                                                "text": "Digital micrometers are more accurate."
+                                            },
+                                            {
+                                                "id": 2,
+                                                "text": "Digital micrometers are easier to use."
+                                            },
+                                            {
+                                                "id": 3,
+                                                "text": "Digital micrometers can measure longer distances."
+                                            },
+                                            {
+                                                "id": 4,
+                                                "text": "Digital micrometers are less expensive."
+                                            }
+                                        ],
+                                        "answer": 2,
+                                        "solution": "While digital micrometers and analog micrometers are equally accurate, digital micrometers are often easier to use because they provide a digital readout of the measurement."
+                                    },
+                                    {
+                                        "type": "mcq",
+                                        "question": "What is the main difference between a calliper and a micrometer?",
+                                        "options": [
+                                            {
+                                                "id": 1,
+                                                "text": "A calliper is used for measuring diameter, while a micrometer is used for measuring length."
+                                            },
+                                            {
+                                                "id": 2,
+                                                "text": "A calliper is used for measuring length, while a micrometer is used for measuring diameter."
+                                            },
+                                            {
+                                                "id": 3,
+                                                "text": "A calliper is more accurate than a micrometer."
+                                            },
+                                            {
+                                                "id": 4,
+                                                "text": "A calliper is less expensive than a micrometer."
+                                            }
+                                        ],
+                                        "answer": 2,
+                                        "solution": "Callipers are used for measuring the distance between two opposite sides of an object, such as the length of a cylinder. Micrometers, on the other hand, are used for measuring the diameter or thickness of an object, such as the diameter of a wire."
+                                    },
+                                    {
+                                        "type": "mcq",
+                                        "question": "How should measuring tools be stored when not in use?",
+                                        "options": [
+                                            {
+                                                "id": 1,
+                                                "text": "In a drawer or toolbox"
+                                            },
+                                            {
+                                                "id": 2,
+                                                "text": "In direct sunlight"
+                                            },
+                                            {
+                                                "id": 3,
+                                                "text": "In a damp environment"
+                                            },
+                                            {
+                                                "id": 4,
+                                                "text": "Anywhere that is convenient"
+                                            }
+                                        ],
+                                        "answer": 3,
+                                        "solution": "Measuring tools should be stored in a dry, cool place to prevent damage and ensure accuracy. Storing them in a drawer or toolbox is a good way to protect them from dust, moisture, and other environmental factors that can affect their performance."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "title": "Using a measuring cylinder"
+                            },
+                            {
+                                "id": 3,
+                                "title": "Measuring time intervals"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "description": "Motion",
+                        "free_available": false,
+                        "sublessons": [
+                            {
+                                "id": 1,
+                                "title": "Physical quantities and measurement techniques",
+                                "free": false
+                            },
+                            {
+                                "id": 2,
+                                "title": "Using a measuring cylinder",
+                                "free": true
+                            },
+                            {
+                                "id": 3,
+                                "title": "Measuring time intervals",
+                                "free": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "description": "Density",
+                        "free_available": true,
+                        "sublessons": [
+                            {
+                                "id": 1,
+                                "title": "Physical quantities and measurement techniques",
+                                "free": false
+                            },
+                            {
+                                "id": 2,
+                                "title": "Using a measuring cylinder",
+                                "free": true
+                            },
+                            {
+                                "id": 3,
+                                "title": "Measuring time intervals",
+                                "free": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Chapter 1: Motion, Forces and Energy",
+                "description": "In this chapter, you are going to be learning the inner workings of how forces and motion react to one another, and how scientists use various useful formulas to aid in new findings. You will also be able to comprehend all the necessary oveview needed to ace this course.",
+                "lessons": [
+                    {
+                        "id": 1,
+                        "description": "Physical quantities and measurement techniques",
+                        "free_available": true,
+                        "sublessons": [
+                            {
+                                "id": 1,
+                                "title": "Physical quantities and measurement techniques",
+                                "free": false,
+                                "content": [
+                                    {
+                                        "type": "video",
+                                        "url": "https://hexa-application.s3.us-east-2.amazonaws.com/Animated/3.2.1+(Animated).mp4"
+                                    },
+                                    {
+                                        "type": "title",
+                                        "text": "Welcome to the enthralling world of measurement techniques!"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "We will look at several physical quantities, measuring devices, and precision in this sub-lesson. Prepare to be immersed in practical examples and real-world applications to deepen your comprehension."
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "What are Physical Quantities?"
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "Physical quantities are quantities that can be measured and they consist of the following:"
+                                    },
+                                    {
+                                        "type": "o_bullets",
+                                        "items": [
+                                            "A numerical magnitude",
+                                            "A unit (kg, cm, ml, etc.)"
+                                        ]
+                                    },
+                                    {
+                                        "type": "u_bullets",
+                                        "items": [
+                                            "A numerical magnitude",
+                                            "A unit (kg, cm, ml, etc.)"
+                                        ]
+                                    },
+                                    {
+                                        "type": "paragraph",
+                                        "text": "They are essential for comprehending and characterizing the physical world around us. For example, length is a physical quantity that measures the size or amount of an object, but time measures how long events last."
+                                    },
+                                    {
+                                        "type": "mcq",
+                                        "question": "What do we study in dynamics, when this and that doesn`t work out",
+                                        "options": [
+                                            {
+                                                "id": 1,
+                                                "text": "Knowing the difference between relative velocity and actual speed."
+                                            },
+                                            {
+                                                "id": 2,
+                                                "text": "F = ma"
+                                            },
+                                            {
+                                                "id": 3,
+                                                "text": "The motion of objects with consideration of the forces that cause it."
+                                            },
+                                            {
+                                                "id": 4,
+                                                "text": "Study of motion in a straight line."
+                                            }
+                                        ],
+                                        "answer": 2,
+                                        "solution": "Knowing the difference between relative velocity and actual speed."
+                                    },
+                                    {
+                                        "type": "mcq",
+                                        "question": "What do we study in dynamics, when this and that doesn`t work out",
+                                        "options": [
+                                            {
+                                                "id": 1,
+                                                "text": "Knowing the difference between relative velocity and actual speed."
+                                            },
+                                            {
+                                                "id": 2,
+                                                "text": "F = ma"
+                                            },
+                                            {
+                                                "id": 3,
+                                                "text": "The motion of objects with consideration of the forces that cause it."
+                                            },
+                                            {
+                                                "id": 4,
+                                                "text": "Study of motion in a straight line."
+                                            }
+                                        ],
+                                        "answer": 2,
+                                        "solution": "Knowing the difference between relative velocity and actual speed."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 2,
+                                "title": "Using a measuring cylinder",
+                                "free": true
+                            },
+                            {
+                                "id": 3,
+                                "title": "Measuring time intervals",
+                                "free": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "description": "Motion",
+                        "free_available": false,
+                        "sublessons": [
+                            {
+                                "id": 1,
+                                "title": "Physical quantities and measurement techniques",
+                                "free": false
+                            },
+                            {
+                                "id": 2,
+                                "title": "Using a measuring cylinder",
+                                "free": true
+                            },
+                            {
+                                "id": 3,
+                                "title": "Measuring time intervals",
+                                "free": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "description": "Density",
+                        "free_available": true,
+                        "sublessons": [
+                            {
+                                "id": 1,
+                                "title": "Physical quantities and measurement techniques",
+                                "free": false
+                            },
+                            {
+                                "id": 2,
+                                "title": "Using a measuring cylinder",
+                                "free": true
+                            },
+                            {
+                                "id": 3,
+                                "title": "Measuring time intervals",
+                                "free": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Chapter 2: Thermal Physics",
+                "description": "In this chapter, you are going to be learning the inner workings of how forces and motion react to one another, and how scientists use various useful formulas to aid in new findings. You will also be able to comprehend all the necessary oveview needed to ace this course."
+            },
+            {
+                "id": 3,
+                "title": "Chapter 3: Waves",
+                "description": "In this chapter, you are going to be learning the inner workings of how forces and motion react to one another, and how scientists use various useful formulas to aid in new findings. You will also be able to comprehend all the necessary oveview needed to ace this course."
+            },
+            {
+                "id": 4,
+                "title": "Chapter 4: Electricity and Magnetism",
+                "description": "In this chapter, you are going to be learning the inner workings of how forces and motion react to one another, and how scientists use various useful formulas to aid in new findings. You will also be able to comprehend all the necessary oveview needed to ace this course."
+            },
+            {
+                "id": 5,
+                "title": "Chapter 5: Nuclear Physics",
+                "description": "In this chapter, you are going to be learning the inner workings of how forces and motion react to one another, and how scientists use various useful formulas to aid in new findings. You will also be able to comprehend all the necessary oveview needed to ace this course."
+            },
+            {
+                "id": 6,
+                "title": "Chapter 6: Space Physics",
+                "description": "In this chapter, you are going to be learning the inner workings of how forces and motion react to one another, and how scientists use various useful formulas to aid in new findings. You will also be able to comprehend all the necessary oveview needed to ace this course."
+            }
+        ]
+    }
+}
