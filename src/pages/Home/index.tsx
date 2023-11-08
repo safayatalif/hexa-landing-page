@@ -1,5 +1,10 @@
 import React from 'react';
+import { HomeBanner } from '../../components';
 
 export const Home: React.FC = () => {
-    return <div>HOMEPAGE</div>;
+    return (
+        <div>
+            <HomeBanner></HomeBanner>
+        </div>
+    );
 };
