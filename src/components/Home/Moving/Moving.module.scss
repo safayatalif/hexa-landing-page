@@ -1,0 +1,69 @@
+.movingContainer {
+    margin: 24px 222px;
+}
+
+.heading {
+    text-align: center;
+    margin: 96px 0px;
+    .heading1 {
+        color: #929294;
+    }
+    .heading2 {
+        color: black;
+    }
+}
+
+.movingBoxContainer {
+    display: flex;
+    gap: 24px;
+
+    .movingBox1 {
+        flex: 9;
+        height: 500px;
+        position: relative;
+        background: linear-gradient(45deg, #164c63, #088ab2);
+        width: 100%;
+        border-radius: 24px;
+        padding: 72px 72px;
+        color: white;
+        p {
+            margin-bottom: 18px;
+        }
+        .movingBoxImage {
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 25%;
+        }
+    }
+
+    .movingBox2 {
+        flex: 3;
+        background: white;
+        box-shadow: 5px 5px 10px rgba(60, 60, 60, 0.1);
+        border-radius: 24px;
+        .movingBoxImage2 {
+            width: 100%;
+            border-radius: 12px;
+
+            height: 193px;
+        }
+        .boxTwoText {
+            padding: 56px 24px;
+            p {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+.writingImage {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 180px;
+}
+.TabsImage {
+    width: 100%;
+    margin-top: 48px;
+    // margin-bottom: 180px;
+}
