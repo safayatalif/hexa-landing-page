@@ -1,2 +1,14 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
+
+.AboutBanner {
+    background-image: url('../../assets/about-image/Image.png');
+    // width: 1920px;
+    height: 434px;
+
+}
+
+.AboutHeading {
+    text-align: center;
+    margin-top: 30px;
+}
