@@ -4,7 +4,13 @@ import styles from './Button.module.scss';
 
 export interface ButtonProps {
     children: React.ReactNode;
-    styleType: 'primary' | 'secondary' | 'correct' | 'error' | 'success';
+    styleType:
+        | 'primary'
+        | 'secondary'
+        | 'correct'
+        | 'error'
+        | 'success'
+        | 'outline';
     childrenClassname?: string;
     className?: string;
     disabled?: boolean;
