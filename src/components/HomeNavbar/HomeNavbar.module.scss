@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.navbarContainer {
+    position: fixed;
+    padding: 0px 222px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: $hexaLightBackground;
+    backdrop-filter: blur(5px);
+    top: 0;
+    color: transparent;
+    z-index: 100;
+    .navLinkContainer {
+        display: flex;
+    }
+    .continueButton {
+        margin: 10px 12px;
+        padding: 5px 10px;
+        border-radius: 32px;
+    }
+
+    .navLink {
+        text-decoration: none;
+        color: inherit;
+        margin: 10px 12px;
+    }
+}

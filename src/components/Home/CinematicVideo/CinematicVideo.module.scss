@@ -1,0 +1,21 @@
+.cinematicContainer {
+}
+
+.cinematicVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 76px;
+    margin: auto;
+    position: relative;
+}
+
+.cinematicText {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: rgb(234, 234, 234);
+}
+.p1 {
+    margin-top: 24px;
+}
