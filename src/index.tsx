@@ -16,8 +16,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <Provider store={store}>
-            {/* loading should include a Loader component */}
-            <PersistGate loading={null} persistor={persistor}>
+            <PersistGate loading={null} persistor={persistor as any}>
                 <BrowserRouter>
                     <Routes>
                         <Route path="/*" element={<App />} />

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from '../Modal/index'
 import styles from './About.module.scss';
 import { Typography } from '../../common';
 // import {image} from '../../data/aboutTeam.json';
@@ -6,12 +7,24 @@ import { Typography } from '../../common';
 import image from '../../../src/assets/about-image/hamja-yusuf.png'
 import image2 from '../../../src/assets/about-image/arteza-ahmed.png'
 import image3 from '../../../src/assets/about-image/asm-tassen.png'
-import image4 from '../../../src/assets/about-image/yasir-mohiuddin.png'
-
+import image4 from '../../../src/assets/about-image/yasir-mohiuddin.png';
 
 export const About: React.FC = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [clickedImage, setClickedImage] = useState('');
+
+    const openModal = (imageSrc: string, details: string) => {
+        setIsModalOpen(true);
+        setClickedImage(details);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setClickedImage('');
+    };
     return (
         <>
+
             <div className={styles.AboutBanner}>
 
             </div>
@@ -64,38 +77,26 @@ export const About: React.FC = () => {
 
             </div>
             <div className={styles.AboutTeamImage}>
-                <div>
+                <div onClick={() => openModal(image, 'Hamza Yusuff is Hexa’s Chief Executive & Growth Officer. Hamza, is primary responsible for crafting the companys growth strategies and overall vision. He works across all departments, ensuring Hexa is on the right trajectory. This involves overseeing areas such as product development, engineering, sales, and operations, all while maintaining a high-level perspective to effectively collaborate with the entire team. In addition to his role at Hexa, Hamza is also involved in several other businesses in Canada. He is currently focused on scaling his B2B company, IOCHE, where he assists Canadas top models and influencers in launching their clothing brands. Before this, Hamza worked as a Software Engineer at companies like Samsung, Wealthsimple, and NCR Corporation, where he contributed to various engineering projects.')}>
                     <img src={image} alt="" />
-
-
                 </div>
-                <div>
+                <div onClick={() => openModal(image2, 'Irteza Ahmed is Hexa’s Chief Financial & Operations Officer.Irtezas expertise overlooks resource management, overseeing the allocation and management of various resources, including human capital and infrastructure. His key responsibility lies in leverage strategies, financial structuring, and amplifying successful endeavours. By closely monitoring key performance indicators and operational metrics, Irteza assesses the performance of Hexas fantastic team and the company as a whole. Lastly, Irteza takes charge of the legal and compliance department, navigating international regulations while reducing costs and ensuring full compliance. His expertise in cost reduction allows him to find innovative ways to save on taxes and legal expenses.')}>
                     <img src={image2} alt="" />
+
                 </div>
-                <div>
+                <div onClick={() => openModal(image4, 'Yasir Mohiuddin is Hexa’s Chief Creative & Product Officer.Apart from having a holistic leadership through the various departments of Hexa, Yasir primarily overlooks every thing related to product and creative.From overseeing end - to - end management of creative and product direction, content development, and branding supervision, Yasir also plays a key role in the continued development of product ideation and strategic user experience.In conjunction with Hexa, Yasir runs a personal creative direction brand based in Hong Kong - working with the likes of Redbull, Penfolds, Pusha T, and S2O. Prior to Hexa, Yasir has also led blockchain-based product design and direction at other companies including Moon Lab and D-Engraver.')}>
                     <img src={image4} alt="" />
                 </div>
-                <div>
+                <div onClick={() => openModal(image3, 'A S M Taseen is Hexa’s Chief Technology Officer, as well as overlooking product direction.Taseens primary responsibility is overseeing the entire product development process, including project building, design pattern planning, dev team management, implementation of best practices, and the maintenance of a scalable infrastructure. Moreover, he puts the technical perspective when it comes to scoping new features at Hexa. Overall, he ensures that Hexa experiences a seamless development-to-deployment process.Outside of Hexa, Taseen is an aspiring software engineer with a deep passion for his career. He has gained valuable experience through Software Engineering Internships at several North American startups, including Super, Relay Financial, and TutorOcean. In these roles, he worked on and took ownership of various high-priority projects, solidifying his expertise across a range of technologies and industries.')}>
                     <img src={image3} alt="" />
                 </div>
-
             </div>
+
+            {isModalOpen && (
+                <Modal imageUrl={clickedImage} closeModal={closeModal} />
+            )}
+
+
         </>
     )
 };
-
-{/* <img src={image} alt="" /> */ }
-{/* 
-                    {aboutTeam?.map((item, idx) => (
-                        <div key={idx}>
-                            <img width={100} height={100} src={item?.image} alt="" />
-
-                        </div>
-                    ))} */}
-{/* {aboutTeam?.map(member => (
-                        <div key={member.id}>
-
-                            <img width={100} height={100} src={member?.url} alt="" />
-
-                        </div>
-                    ))} */}
