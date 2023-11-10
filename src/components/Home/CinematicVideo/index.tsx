@@ -8,7 +8,7 @@ const CinematicVideo: React.FC = () => {
     return (
         <div className="cinematicContainer">
             <div className={styles.cinematicVideo}>
-                <VideoPlayer url={cinematic}></VideoPlayer>
+                <VideoPlayer overlayText=" " url={cinematic}></VideoPlayer>
                 <div className={styles.cinematicText}>
                     <Typography variant="title-md-semibold">
                         Cinematic <br /> masterclasses for <br /> each topic.
