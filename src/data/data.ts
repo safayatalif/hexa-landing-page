@@ -1,5 +1,6 @@
 import { ContentItem } from './content';
 import * as courseDataJSON from './courses.json';
+// import * as aboutTeamDataJSON from './aboutTeam.json'
 
 export interface Sublesson {
     id: number;
@@ -39,3 +40,4 @@ interface Courses {
 }
 
 export const courses: Courses = courseDataJSON as Courses;
+// export const aboutTeam: 'AboutTeam' = aboutTeamDataJSON as 'AboutTeam';

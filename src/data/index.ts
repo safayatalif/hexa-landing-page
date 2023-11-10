@@ -1,5 +1,5 @@
 import { Courses_available } from './constant';
-import { Chapter, Course, courses } from './data';
+import { Chapter, Course, courses, } from './data';
 export * from './content';
 export * from './data';
 export const getCourse = (course?: string): Course | null => {
