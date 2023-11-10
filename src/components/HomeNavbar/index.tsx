@@ -8,10 +8,13 @@ const HomeNavbar: React.FC = () => {
         <div className={styles.navbarContainer}>
             <img src={HexaBetaLogo} alt="Hexa Beta Logo" />
             <div className="navLinkContainer">
-                <a className={styles.navLink} href="">
+                <a className={styles.navLink} href="/">
+                    Home
+                </a>
+                <a className={styles.navLink} href="/about">
                     About
                 </a>
-                <a className={styles.navLink} href="">
+                <a className={styles.navLink} href="/contact">
                     Contact
                 </a>
                 <Button styleType="primary" className={styles.continueButton}>
