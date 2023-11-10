@@ -1,6 +1,7 @@
 import BoxContainer from './BoxContainer.png';
 import Container from './Container.png';
 import Difficulty from './Difficulty.png';
+import OneStep from './OneStop.png';
 import Question from './Question.png';
 import Split from './Split.png';
 import Tabs from './Tabs.png';
@@ -15,6 +16,7 @@ export {
     BoxContainer,
     Container,
     Difficulty,
+    OneStep,
     Question,
     Split,
     Tabs,
