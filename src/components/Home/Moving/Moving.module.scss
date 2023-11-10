@@ -18,7 +18,7 @@
     gap: 24px;
 
     .movingBox1 {
-        flex: 9;
+        flex: 7;
         height: 500px;
         position: relative;
         background: linear-gradient(45deg, #164c63, #088ab2);
@@ -38,7 +38,7 @@
     }
 
     .movingBox2 {
-        flex: 3;
+        flex: 5;
         background: white;
         box-shadow: 5px 5px 10px rgba(60, 60, 60, 0.1);
         border-radius: 24px;
