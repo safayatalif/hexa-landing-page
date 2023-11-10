@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeBanner, Paper } from '../../components';
+import { HomeBanner, Learning, Paper } from '../../components';
 import CinematicVideo from '../../components/Home/CinematicVideo';
 import { Moving } from '../../components/Home/Moving';
 
@@ -10,6 +10,7 @@ export const Home: React.FC = () => {
             <CinematicVideo></CinematicVideo>
             <Moving></Moving>
             <Paper></Paper>
+            <Learning></Learning>
         </div>
     );
 };
