@@ -2,40 +2,189 @@
 
 .navbarContainer {
     position: fixed;
-    padding: 0px 222px;
+    padding: 0 222px; /* Responsive padding */
     width: 100%;
     display: flex;
     justify-content: space-between;
-    // background: $hexaLightBackground;
     backdrop-filter: blur(5px);
     top: 0;
     color: transparent;
     z-index: 100;
-    .navLinkContainer {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+
+    .hexaBetaLogo {
         display: flex;
+        align-items: center;
     }
+
     .continueButton {
-        margin: 10px 12px;
-        padding: 5px 10px;
+        margin: 1em 0.3em; /* Responsive margins */
+        padding: 0.3em 1em;
         border-radius: 32px;
+    }
+    .loginButton {
+        margin: 1em 0.3em; /* Responsive margins */
+        padding: 0.2em 1em;
+        border-radius: 32px;
+        color: #fff;
     }
 
     .navLink {
         text-decoration: none;
-        // color: inherit;
-        margin: 10px 12px;
-        font-weight: bold;
+        margin: 1em 0.4em; /* Responsive margins */
+        font-weight: 300;
+        color: white;
     }
+}
+
+.dropdownContainer {
+    display: none;
 }
 
 /* Mobile Phones */
 @media (max-width: 430px) {
-    /* Your mobile-specific styles here */
+    .navbarContainer {
+        padding: 12px; /* Responsive padding */
+    }
+
+    .navLinkContainer {
+        display: none;
+    }
+    .navbarToggle {
+        display: flex !important;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+    }
+    .dropdownContainer {
+        position: relative !important;
+        display: flex !important;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+
+        // display: none;
+    }
+
+    .navLink {
+        margin: 0px !important;
+    }
+
+    .continueButton {
+        margin-top: 3px !important; /* Responsive margins */
+    }
+    .loginButton {
+        margin-top: 3px !important; /* Responsive margins */
+    }
+
+    .dropdownTrigger {
+        cursor: pointer;
+
+        &:hover {
+            .dropdown {
+                display: block;
+            }
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            width: 180px;
+
+            &.open {
+                display: block;
+            }
+
+            a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+
+                // &:hover {
+                //     background-color: rgb(98, 130, 137);
+                // }
+            }
+        }
+    }
 }
 
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
-    /* Your tablet-specific styles here */
+    .navbarContainer {
+        padding: 0 56px; /* Responsive padding */
+    }
+
+    .navLinkContainer {
+        display: none;
+    }
+    .navbarToggle {
+        display: flex !important;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+    }
+    .dropdownContainer {
+        position: relative !important;
+        display: flex !important;
+        color: #fff;
+        align-items: center;
+        cursor: pointer;
+
+        // display: none;
+    }
+
+    .navLink {
+        margin: 0px !important;
+    }
+
+    .continueButton {
+        margin-top: 3px !important; /* Responsive margins */
+    }
+    .loginButton {
+        margin-top: 3px !important; /* Responsive margins */
+    }
+
+    .dropdownTrigger {
+        cursor: pointer;
+
+        &:hover {
+            .dropdown {
+                display: block;
+            }
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: #000000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            width: 180px;
+
+            &.open {
+                display: block;
+            }
+
+            a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    background-color: rgb(53, 80, 86);
+                }
+            }
+        }
+    }
 }
 
 /* Laptops */
@@ -46,4 +195,29 @@
 /* Wide Desktop Screens */
 @media (min-width: 1920px) {
     /* Your wide desktop-specific styles here */
+}
+
+/* Change background color on scroll */
+.navbarContainer.scrolled {
+    background-color: $hexaLightBackground; /* Change to your desired background color on scroll */
+    .navLink {
+        color: black;
+        font-weight: 400;
+    }
+
+    .loginButton {
+        border: 1px solid #000000;
+        color: #000000 !important;
+    }
+    .dropdownTrigger {
+        color: #000000 !important;
+    }
+    .dropdown {
+        background-color: rgb(254, 254, 254);
+    }
+    a {
+        &:hover {
+            background-color: rgb(237, 246, 248);
+        }
+    }
 }

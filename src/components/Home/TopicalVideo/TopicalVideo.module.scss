@@ -1,0 +1,69 @@
+/* Laptops */
+
+.topicalContainer {
+    padding: 24px 150px;
+}
+
+.topicalVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 76px;
+    margin: auto;
+    position: relative;
+}
+
+.topicalText {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: rgb(234, 234, 234);
+}
+.heading {
+    font-size: xx-large;
+}
+.p1 {
+    margin-top: 24px;
+    font-size: small;
+}
+
+/* Mobile Phones */
+@media (max-width: 430px) {
+    .topicalContainer {
+        padding: 0px 0px;
+    }
+    .topicalVideo {
+        padding: 56px;
+    }
+    .heading {
+        font-size: medium;
+        text-wrap: wrap;
+    }
+    .p1 {
+        margin-top: 24px;
+        font-size: smaller;
+    }
+}
+
+/* Tablets */
+@media (min-width: 431px) and (max-width: 768px) {
+    .topicalContainer {
+        padding: 0px 0px;
+    }
+    .topicalVideo {
+        padding: 56px;
+    }
+    .heading {
+        font-size: medium;
+        text-wrap: wrap;
+    }
+    .p1 {
+        margin-top: 24px;
+        font-size: smaller;
+    }
+}
+
+/* Wide Desktop Screens */
+@media (min-width: 1920px) {
+    /* Your wide desktop-specific styles here */
+}
