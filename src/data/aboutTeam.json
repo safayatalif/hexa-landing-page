@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "image":"../assets/about-image/hamja-yusuf.png",
+        "description": "Hamza Yusuff is Hexas Chief Executive & Growth Officer.Hamza, is primary responsible for crafting the company's growth strategies and overall vision. He works across all departments, ensuring Hexa is on the right trajectory. This involves overseeing areas such as product development, engineering, sales, and operations, all while maintaining a high-level perspective to effectively collaborate with the entire team.In addition to his role at Hexa,Hamza is also involved in several other businesses in Canada. He is currently focused on scaling his B2B company; IOCHE; where he assists Canada's top models and influencers in launching their clothing brands. Before this, Hamza worked as a Software Engineer at companies like Samsung; Wealthsimple and NCR Corporation; where he contributed to various engineering projects"
+    },
+    {
+        "id": 2,
+        "image": "../assets/about-image/arteza-ahmed.png",
+        "description": "Irteza Ahmed is Hexa’s Chief Financial & Operations Officer.Irteza's expertise overlooks resource management, overseeing the allocation and management of various resources, including human capital and infrastructure. His key responsibility lies in leverage strategies, financial structuring, and amplifying successful endeavours. By closely monitoring key performance indicators and operational metrics, Irteza assesses the performance of Hexa's fantastic team and the company as a whole.Lastly, Irteza takes charge of the legal and compliance department, navigating international regulations while reducing costs and ensuring full compliance. His expertise in cost reduction allows him to find innovative ways to save on taxes and legal expenses."
+    },
+    {
+        "id": 3,
+        "image": "../assets/about-image/yasir-mohiuddin.png",
+        "description": "Yasir Mohiuddin is Hexa’s Chief Creative & Product Officer.Apart from having a holistic leadership through the various departments of Hexa, Yasir primarily overlooks every thing related to product and creative. From overseeing end-to-end management of creative and product direction, content development, and branding supervision, Yasir also plays a key role in the continued development of product ideation and strategic user experience.In conjunction with Hexa, Yasir runs a personal creative direction brand based in Hong Kong - working with the likes of Redbull, Penfolds, Pusha T, and S2O. Prior to Hexa, Yasir has also led blockchain-based product design and direction at other companies including Moon Lab and D-Engraver."
+    },
+    {
+        "id": 4,
+        "image": "../assets/about-image/asm-tassen.png",
+        "description": "A S M Taseen is Hexa’s Chief Technology Officer, as well as overlooking product direction.Taseen's primary responsibility is overseeing the entire product development process, including project building, design pattern planning, dev team management, implementation of best practices, and the maintenance of a scalable infrastructure. Moreover, he puts the technical perspective when it comes to scoping new features at Hexa. Overall, he ensures that Hexa experiences a seamless development-to-deployment process.Outside of Hexa, Taseen is an aspiring software engineer with a deep passion for his career. He has gained valuable experience through Software Engineering Internships at several North American startups, including Super, Relay Financial, and TutorOcean. In these roles, he worked on and took ownership of various high-priority projects, solidifying his expertise across a range of technologies and industries."
+    }
+]
