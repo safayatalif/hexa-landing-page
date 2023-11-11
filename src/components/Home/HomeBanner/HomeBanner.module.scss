@@ -2,24 +2,33 @@
 @import '../../../styles/mixins';
 
 /* Laptops */
+
+.bannerContainer {
+    background-image: url('../../../assets/home/black.jpg');
+}
+
 .dualBackground {
     padding: 76px 222px;
     margin: auto;
     width: 100%;
+    height: 100%;
     background-image: url('../../../assets/home/waves.png'),
         url('../../../assets/home/mockup.png');
     background-position: center;
     background-size: cover;
     position: relative;
+    background-color: transparent;
+
     .heading {
         text-align: center;
         padding-top: 96px;
-        background: linear-gradient(to right, #303030, #f8f7f7, #303030);
+        background: linear-gradient(to right, #8a8a8a, #ffffff, #ffe5e5);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     .p1 {
-        margin-top: 24px;
+        padding-top: 32px;
+        color: aliceblue;
     }
 }
 
@@ -31,8 +40,8 @@
     width: 100%;
     height: 100%;
     background: url('../../../assets/home/mockup.png');
-    opacity: 50%;
-    background-position: center;
+    opacity: 35%;
+    background-position: top;
     background-size: cover;
 }
 
@@ -49,7 +58,7 @@
 
 .buttonContainer {
     text-align: center;
-    margin-top: 48px;
+    margin-top: 24px;
 }
 
 .getButton {
@@ -64,6 +73,7 @@
 }
 
 .bottomHeading {
+    padding: 0px 76px 222px 222px;
     text-align: left;
     .heading1 {
         background: linear-gradient(45deg, #164c63, #088ab2);
@@ -98,22 +108,53 @@
 
 /* Mobile Phones */
 @media (max-width: 430px) {
-    /* Your mobile-specific styles here */
+    .dualBackground {
+        padding: 36px 56px;
+    }
+    .awardContainer {
+        display: inline-block;
+        padding: 350px 36px 0 36px;
+        .award {
+            width: 100%;
+
+            margin: auto;
+            height: 260px;
+            padding-bottom: 36px;
+        }
+    }
+
+    .heading {
+        padding-top: 46px;
+    }
+
+    .bottomHeading {
+        padding: 36px 56px;
+    }
 }
 
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
     .dualBackground {
-        padding: 76px 56px;
+        padding: 36px 56px;
     }
     .awardContainer {
         display: inline-block;
-        // padding: 724px 56px 196px 56px;
+        padding: 350px 36px 0 36px;
         .award {
             width: 100%;
+
             margin: auto;
-            height: 250px;
+            height: 260px;
+            padding-bottom: 36px;
         }
+    }
+
+    .heading {
+        padding-top: 46px;
+    }
+
+    .bottomHeading {
+        padding: 36px 56px;
     }
 }
 

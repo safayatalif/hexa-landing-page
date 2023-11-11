@@ -112,3 +112,82 @@
     margin-top: 48px;
     // margin-bottom: 180px;
 }
+
+/* Mobile Phones */
+@media (max-width: 430px) {
+    .paperContainer {
+        margin: 8px 56px;
+    }
+
+    .paperBoxContainer {
+        display: inline;
+        .paperBox1 {
+            margin-bottom: 56px;
+            padding: 36px;
+        }
+        .paperBox2 {
+            padding-bottom: 100px;
+            margin-bottom: 36px;
+            margin-top: 56px;
+            .paperBoxImage2 {
+                width: 40%;
+            }
+        }
+    }
+
+    .metricsBoxContainer {
+        display: inline;
+        .metricsBox1 {
+            padding: 36px;
+        }
+        .metricsBox2 {
+            padding-bottom: 150px;
+            margin-top: 56px;
+            .metricsBoxImage2 {
+                width: 60%;
+            }
+        }
+    }
+}
+
+/* Tablets */
+@media (min-width: 431px) and (max-width: 768px) {
+    .paperContainer {
+        margin: 8px 56px;
+    }
+
+    .paperBoxContainer {
+        display: inline;
+        .paperBox1 {
+            margin-bottom: 56px;
+            padding: 96px 36px;
+        }
+        .paperBox2 {
+            padding-bottom: 150px;
+            margin-bottom: 36px;
+            margin-top: 56px;
+            .paperBoxImage2 {
+                width: 30%;
+            }
+        }
+    }
+
+    .metricsBoxContainer {
+        display: inline;
+        .metricsBox1 {
+            padding: 36px;
+        }
+        .metricsBox2 {
+            padding-bottom: 150px;
+            margin-top: 56px;
+            .metricsBoxImage2 {
+                width: 50%;
+            }
+        }
+    }
+}
+
+/* Wide Desktop Screens */
+@media (min-width: 1920px) {
+    /* Your wide desktop-specific styles here */
+}

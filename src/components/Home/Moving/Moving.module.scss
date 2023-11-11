@@ -60,10 +60,51 @@
 .writingImage {
     width: 100%;
     margin-top: 24px;
-    margin-bottom: 180px;
+    margin-bottom: 46px;
 }
 .TabsImage {
     width: 100%;
     margin-top: 48px;
     // margin-bottom: 180px;
+}
+
+/* Mobile Phones */
+@media (max-width: 430px) {
+    .movingContainer {
+        margin: 8px 56px;
+    }
+
+    .movingBoxContainer {
+        display: inline;
+        .movingBox1 {
+            margin-bottom: 36px;
+        }
+    }
+
+    .writingImage {
+        margin-bottom: 56px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 431px) and (max-width: 768px) {
+    .movingContainer {
+        margin: 8px 56px;
+    }
+
+    .movingBoxContainer {
+        display: inline;
+        .movingBox1 {
+            margin-bottom: 36px;
+        }
+    }
+
+    .writingImage {
+        margin-bottom: 56px;
+    }
+}
+
+/* Wide Desktop Screens */
+@media (min-width: 1920px) {
+    /* Your wide desktop-specific styles here */
 }

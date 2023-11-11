@@ -7,34 +7,36 @@ import styles from './HomeBanner.module.scss';
 
 export const HomeBanner: React.FC = () => {
     return (
-        <div className={styles.dualBackground}>
-            <div className={styles.heading}>
-                <Typography variant="title-xl-semibold">
-                    The most stylish learning <br /> experience. Ever.
-                </Typography>
-                <Typography variant="text-xs-regular">
-                    <span className={styles.p1}>
-                        Making high school exam preparations fun, delightful,
-                        and cinematic.
-                    </span>
-                </Typography>
-            </div>
-            <div className={styles.buttonContainer}>
-                <Button styleType="primary" className={styles.getButton}>
-                    <Typography variant="text-md-semibold" color="white">
-                        Get Started
+        <div className={styles.bannerContainer}>
+            <div className={styles.dualBackground}>
+                <div className={styles.heading}>
+                    <Typography variant="title-xl-semibold">
+                        The most stylish learning <br /> experience. Ever.
                     </Typography>
-                </Button>
-                <Button styleType="outline" className={styles.watchButton}>
-                    <Typography variant="text-md-semibold" color="white">
-                        Watch Physics trailer
+                    <Typography variant="text-xs-regular">
+                        <span className={styles.p1}>
+                            Making high school exam preparations fun,
+                            delightful, and cinematic.
+                        </span>
                     </Typography>
-                </Button>
-            </div>
+                </div>
+                <div className={styles.buttonContainer}>
+                    <Button styleType="primary" className={styles.getButton}>
+                        <Typography variant="text-md-semibold" color="white">
+                            Get Started
+                        </Typography>
+                    </Button>
+                    <Button styleType="outline" className={styles.watchButton}>
+                        <Typography variant="text-md-semibold" color="white">
+                            Watch Physics trailer
+                        </Typography>
+                    </Button>
+                </div>
 
-            <div className={styles.awardContainer}>
-                <img className={styles.award} src={Quantum} alt="" />
-                <img className={styles.award} src={Velocity} alt="" />
+                <div className={styles.awardContainer}>
+                    <img className={styles.award} src={Quantum} alt="" />
+                    <img className={styles.award} src={Velocity} alt="" />
+                </div>
             </div>
             <div className={styles.bottomHeading}>
                 <Typography variant="title-2xl-semibold">

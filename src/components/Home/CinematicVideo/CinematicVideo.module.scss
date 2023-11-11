@@ -16,22 +16,48 @@
 .cinematicText {
     position: absolute;
     top: 25%;
-    left: 25%;
+    left: 15%;
     color: rgb(234, 234, 234);
+}
+.heading {
+    font-size: xx-large;
 }
 .p1 {
     margin-top: 24px;
+    font-size: small;
 }
 
 /* Mobile Phones */
 @media (max-width: 430px) {
-    /* Your mobile-specific styles here */
+    .cinematicContainer {
+        padding: 0px 0px;
+    }
+    .cinematicVideo {
+        padding: 56px;
+    }
+    .heading {
+        font-size: larger;
+    }
+    .p1 {
+        margin-top: 24px;
+        font-size: smaller;
+    }
 }
 
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
     .cinematicContainer {
-        padding: 76px 100px;
+        padding: 0px 0px;
+    }
+    .cinematicVideo {
+        padding: 56px;
+    }
+    .heading {
+        font-size: x-large;
+    }
+    .p1 {
+        margin-top: 24px;
+        font-size: smaller;
     }
 }
 
