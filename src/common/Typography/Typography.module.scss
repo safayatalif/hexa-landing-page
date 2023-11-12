@@ -83,6 +83,12 @@
     font-weight: 600;
     line-height: 44px;
     letter-spacing: -1.08px;
+    @media screen and (max-width: $mobile-screen) {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing: -0.72px;
+    }
 }
 
 .title-md-medium {

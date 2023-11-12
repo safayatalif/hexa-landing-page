@@ -1,30 +1,24 @@
 /* Laptops */
 
 .cinematicContainer {
-    padding: 96px 150px;
-}
+    padding: 76px 222px;
+    .cinematicVideoBox {
+        position: relative;
+        .cinematicVideo {
+            width: 100%;
+            height: 600px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #000;
+        }
 
-.cinematicVideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 76px;
-    margin: auto;
-    position: relative;
-}
-
-.cinematicText {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    color: rgb(234, 234, 234);
-}
-.heading {
-    font-size: xx-large;
-}
-.p1 {
-    margin-top: 24px;
-    font-size: small;
+        .cinematicText {
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            color: #ffffff;
+        }
+    }
 }
 
 /* Mobile Phones */
@@ -32,32 +26,12 @@
     .cinematicContainer {
         padding: 0px 0px;
     }
-    .cinematicVideo {
-        padding: 56px;
-    }
-    .heading {
-        font-size: larger;
-    }
-    .p1 {
-        margin-top: 24px;
-        font-size: smaller;
-    }
 }
 
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
     .cinematicContainer {
-        padding: 0px 0px;
-    }
-    .cinematicVideo {
-        padding: 56px;
-    }
-    .heading {
-        font-size: x-large;
-    }
-    .p1 {
-        margin-top: 24px;
-        font-size: smaller;
+        padding: 36px 56px;
     }
 }
 

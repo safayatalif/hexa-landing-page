@@ -4,7 +4,7 @@
 /* Laptops */
 
 .bannerContainer {
-    background-image: url('../../../assets/home/black.jpg');
+    background: #000;
 }
 
 .dualBackground {
@@ -12,51 +12,48 @@
     margin: auto;
     width: 100%;
     height: 100%;
-    background-image: url('../../../assets/home/waves.png'),
-        url('../../../assets/home/mockup.png');
+    background-image: url('../../../assets/home/waves.png');
     background-position: center;
     background-size: cover;
+    opacity: 50%;
     position: relative;
-    background-color: transparent;
 
-    .heading {
+    .bannerHeading {
         text-align: center;
         padding-top: 96px;
-        background: linear-gradient(to right, #8a8a8a, #ffffff, #ffe5e5);
+        background: linear-gradient(to right, #e7ffff, #ffffff, #fff3f3);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .p1 {
-        padding-top: 32px;
-        color: aliceblue;
-    }
 }
 
-.dualBackground::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.bannerLaptop {
     width: 100%;
-    height: 100%;
-    background: url('../../../assets/home/mockup.png');
-    opacity: 35%;
-    background-position: top;
+    height: 1096px;
+    background-image: url('../../../assets/home/mockup.png');
+    background-position: center;
     background-size: cover;
+    opacity: 80%;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 40%;
+    left: 0;
 }
 
 .awardContainer {
     display: flex;
-    padding: 724px 56px 196px 56px;
+    padding: 65% 30% 56px 30%;
+    align-items: center;
+    justify-content: center;
     .award {
         margin-top: 56px;
-        width: 50%;
+        width: 100%;
         margin: auto;
         height: 250px;
     }
 }
 
-.buttonContainer {
+.bannerButtonContainer {
     text-align: center;
     margin-top: 24px;
 }
@@ -72,8 +69,8 @@
     border-radius: 32px;
 }
 
-.bottomHeading {
-    padding: 0px 76px 222px 222px;
+.bannerBottomHeading {
+    padding: 96px 10px;
     text-align: left;
     .heading1 {
         background: linear-gradient(45deg, #164c63, #088ab2);
@@ -106,14 +103,57 @@
     }
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+
+    &.visible {
+        display: flex;
+    }
+
+    .modalContainer {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        max-width: 80%;
+        max-height: 100%;
+        // background: rgb(38, 38, 38);
+        // border-radius: 16px;
+        transition: transform 0.3s ease-in-out;
+
+        // .videoContainer {
+        // }
+
+        button.closeBtn {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background: none;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    }
+}
+
 /* Mobile Phones */
 @media (max-width: 430px) {
     .dualBackground {
-        padding: 36px 56px;
+        padding: 12px 56px;
     }
     .awardContainer {
-        display: inline-block;
-        padding: 350px 36px 0 36px;
+        display: block !important;
+        padding: 350px 5% 0 5% !important;
         .award {
             width: 100%;
 
@@ -121,14 +161,6 @@
             height: 260px;
             padding-bottom: 36px;
         }
-    }
-
-    .heading {
-        padding-top: 46px;
-    }
-
-    .bottomHeading {
-        padding: 36px 56px;
     }
 }
 
@@ -138,23 +170,14 @@
         padding: 36px 56px;
     }
     .awardContainer {
-        display: inline-block;
-        padding: 350px 36px 0 36px;
+        display: block !important;
+        padding: 350px 10% 0 10% !important;
         .award {
             width: 100%;
-
             margin: auto;
             height: 260px;
             padding-bottom: 36px;
         }
-    }
-
-    .heading {
-        padding-top: 46px;
-    }
-
-    .bottomHeading {
-        padding: 36px 56px;
     }
 }
 
