@@ -22,10 +22,10 @@ export const Moving: React.FC = () => {
                 </div>
                 <div className={styles.movingBoxContainer}>
                     <div className={styles.movingBox1}>
-                        <Typography variant="title-md-medium">
+                        <Typography variant="title-md-semibold">
                             Complimentary notes with each video.
                         </Typography>
-                        <Typography variant="text-xl-regular">
+                        <Typography variant="title-xs-medium">
                             Details and summaries - enjoy both with the notes
                             provided.
                         </Typography>
@@ -42,20 +42,20 @@ export const Moving: React.FC = () => {
                             alt=""
                         />
                         <div className={styles.boxTwoText}>
-                            <Typography variant="title-md-medium">
+                            <Typography variant="title-md-semibold">
                                 MCQs for each lesson.
                             </Typography>
-                            <Typography variant="text-xl-regular">
+                            <Typography variant="title-xs-medium">
                                 Interactiveness - personified.
                             </Typography>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={styles.biteBox}>
                     <img className={styles.writingImage} src={writing} alt="" />
                 </div>
 
-                <Typography variant="text-xl-medium" alignment="center">
+                <Typography variant="text-xl-regular" alignment="center">
                     The goal, always, is to try and ensure that you have access
                     to as many resources as possible, without having to open
                     another tab, or another website. Which swiftly takes us to

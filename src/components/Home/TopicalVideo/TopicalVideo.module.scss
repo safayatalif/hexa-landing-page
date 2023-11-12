@@ -1,30 +1,24 @@
 /* Laptops */
 
 .topicalContainer {
-    padding: 24px 150px;
-}
+    padding: 76px 222px;
+    .topicalVideoBox {
+        position: relative;
+        .topicalVideo {
+            width: 100%;
+            height: 600px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #000;
+        }
 
-.topicalVideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 76px;
-    margin: auto;
-    position: relative;
-}
-
-.topicalText {
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    color: rgb(234, 234, 234);
-}
-.heading {
-    font-size: xx-large;
-}
-.p1 {
-    margin-top: 24px;
-    font-size: small;
+        .topicalText {
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            color: #ffffff;
+        }
+    }
 }
 
 /* Mobile Phones */
@@ -32,34 +26,12 @@
     .topicalContainer {
         padding: 0px 0px;
     }
-    .topicalVideo {
-        padding: 56px;
-    }
-    .heading {
-        font-size: medium;
-        text-wrap: wrap;
-    }
-    .p1 {
-        margin-top: 24px;
-        font-size: smaller;
-    }
 }
 
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
     .topicalContainer {
-        padding: 0px 0px;
-    }
-    .topicalVideo {
-        padding: 56px;
-    }
-    .heading {
-        font-size: medium;
-        text-wrap: wrap;
-    }
-    .p1 {
-        margin-top: 24px;
-        font-size: smaller;
+        padding: 36px 56px;
     }
 }
 

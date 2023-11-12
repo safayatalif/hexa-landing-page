@@ -25,7 +25,7 @@ export const Learning: React.FC = () => {
                             color="white"
                             alignment="center"
                         >
-                            join Beta
+                            Join Beta
                         </Typography>
                     </Button>
                 </div>

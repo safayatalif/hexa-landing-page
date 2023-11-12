@@ -15,10 +15,10 @@ export const Paper: React.FC = () => {
             <div className={styles.paperBoxContainer}>
                 <div className={styles.paperBox2}>
                     <div className={styles.boxTwoText}>
-                        <Typography variant="title-sm-medium">
+                        <Typography variant="title-md-semibold">
                             Past paper database
                         </Typography>
-                        <Typography variant="text-sm-regular">
+                        <Typography variant="text-xl-regular">
                             No need to open another tab for looking up past
                             papers. It’s a one-stop drop.
                         </Typography>
@@ -35,7 +35,7 @@ export const Paper: React.FC = () => {
                         <Typography variant="title-md-semibold" color="grey">
                             Tick tock
                         </Typography>
-                        <Typography variant="title-md-semibold">
+                        <Typography variant="title-md-semibold" color="white">
                             Time is money.
                         </Typography>
                         <Typography variant="text-xl-regular">
@@ -48,7 +48,7 @@ export const Paper: React.FC = () => {
             </div>
             <div className={styles.metricsBoxContainer}>
                 <div className={styles.metricsBox1}>
-                    <Typography variant="title-md-medium">
+                    <Typography variant="title-md-semibold">
                         Sorting Metrics
                     </Typography>
                     <Typography variant="text-xl-regular">
@@ -70,7 +70,7 @@ export const Paper: React.FC = () => {
                 </div>
                 <div className={styles.metricsBox2}>
                     <div className={styles.boxTwoText}>
-                        <Typography variant="title-md-medium">
+                        <Typography variant="title-md-semibold">
                             Split view
                         </Typography>
                         <Typography variant="text-xl-regular">
