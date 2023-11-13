@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import contact from '../../assets/contact-image/Banner Image.png';
 import { Button, Input, Typography } from '../../common';
 import ContactNavbar from '../../components/ContactNavbar';
@@ -75,13 +76,19 @@ export const Contact: React.FC = () => {
                                 Message
                             </Typography>
                         </label>
+                        <textarea
+                            className={styles.messageInput}
+                            name="comment"
+                        >
+                            Leave us a message...
+                        </textarea>
 
-                        <Input
-                            inputType="message"
+                        {/* <Input
+                            inputType="textarea"
                             required={true}
                             placeholder="Leave us a message..."
                             inputClassname={styles.messageInput}
-                        />
+                        /> */}
                     </div>
 
                     <div className={styles.signupContainer}>
@@ -98,14 +105,19 @@ export const Contact: React.FC = () => {
                             <a href="">Terms of Use. </a>
                         </Typography>
                     </div>
-                    <Button
-                        styleType="primary"
-                        className={styles.continueButton}
-                    >
-                        <Typography variant="text-md-semibold" color="white">
-                            Send Message
-                        </Typography>
-                    </Button>
+                    <Link to="/contact/thank">
+                        <Button
+                            styleType="primary"
+                            className={styles.continueButton}
+                        >
+                            <Typography
+                                variant="text-md-semibold"
+                                color="white"
+                            >
+                                Send Message
+                            </Typography>
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </>
