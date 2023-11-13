@@ -10,6 +10,7 @@ export interface ButtonProps {
         | 'correct'
         | 'error'
         | 'success'
+        | 'outlineBlack'
         | 'outline';
     childrenClassname?: string;
     className?: string;

@@ -1,37 +1,34 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
-.AboutBanner {
-    background-image: url('../../assets/about-image/Image.png');
-    // width: 1920px;
-    // width: 100%;
-    height: 434px;
-
+.aboutBanner {
+    // height: 50vh;
+    height: 100%;
+    margin-bottom: 46px;
 }
 
-.AboutHeading {
+.aboutBannerImage {
+    width: 100%;
+}
+
+.aboutHeading {
     text-align: center;
     margin-top: 30px;
 }
 
-.AboutText {
-    margin-left: 220px;
-    margin-right: 220px;
+.aboutText {
+    padding: 36px 222px;
+    > * {
+        margin: 16px 0;
+    }
 }
 
-.AboutTeamHeading {
-    text-align: center;
-}
-
-.AboutTeamImage {
-    display: flex;
+.aboutTeamImage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     position: relative;
-    margin-top: 20px;
-    margin-left: 222px;
-    margin-right: 222px;
+    margin: 20px 222px;
     gap: 20px;
-
-
 }
 
 .teamImage {
@@ -41,34 +38,95 @@
 .modalPosition {
     position: absolute;
     top: 0;
-
-}
-
-.textJoin {
-    margin-top: 150px;
-    text-align: center;
 }
 
 .journeyContainer {
+    margin: 56px auto;
     display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
     // margin-top: 30px;
 }
 
 .journeyButton {
-    width: 125px;
-    height: 48px;
-    padding: 12px, 20px;
+    padding: 10px 18px;
     border-radius: 32px;
-    margin-top: 30px;
+    width: 15%;
+}
+
+.emailDiv {
+    width: 35%;
 }
 
 .emailAddress {
-    width: 400px;
-    margin-top: 30px;
-    height: 44px;
-    padding: 10px, 14px, ;
+    width: 100%;
+    padding: 12px, 14px;
     border-radius: 8px;
-    margin-left: 330px;
     gap: 8px;
+}
+
+/* Mobile Phones */
+@media (max-width: 430px) {
+    .aboutText {
+        padding: 24px 16px;
+        > * {
+            margin: 12px 0;
+        }
+    }
+    .aboutTeamImage {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        margin: 20px 16px;
+        gap: 10px;
+    }
+    .journeyButton {
+        padding: 8px 12px;
+        width: 30%;
+    }
+
+    .emailDiv {
+        width: 40%;
+    }
+
+    .emailAddress {
+        padding: 12px, 14px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 431px) and (max-width: 768px) {
+    .aboutText {
+        padding: 36px 56px;
+        > * {
+            margin: 16px 0;
+        }
+    }
+
+    .aboutTeamImage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        margin: 20px 96px;
+        gap: 10px;
+    }
+
+    .journeyButton {
+        padding: 8px 12px;
+        width: 30%;
+    }
+
+    .emailDiv {
+        width: 40%;
+    }
+
+    .emailAddress {
+        padding: 12px, 14px;
+    }
+}
+
+/* Wide Desktop Screens */
+@media (min-width: 1920px) {
+    /* Your wide desktop-specific styles here */
 }

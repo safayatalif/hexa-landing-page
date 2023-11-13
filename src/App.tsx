@@ -7,6 +7,7 @@ import {
     About,
     Chapters,
     Contact,
+    ContactThank,
     Course,
     Courses,
     Error404NotFound,
@@ -26,6 +27,7 @@ const App: React.FC = () => {
                 <Route index element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/contact/thank" element={<ContactThank />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
 
