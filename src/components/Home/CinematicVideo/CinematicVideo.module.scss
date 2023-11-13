@@ -2,8 +2,10 @@
 
 .cinematicContainer {
     padding: 76px 222px;
+
     .cinematicVideoBox {
         position: relative;
+
         .cinematicVideo {
             width: 100%;
             height: 600px;
@@ -24,7 +26,7 @@
 /* Mobile Phones */
 @media (max-width: 430px) {
     .cinematicContainer {
-        padding: 0px 0px;
+        padding: 32px 0px;
     }
 }
 
