@@ -16,6 +16,7 @@
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "@types/react-redux": "^7.1.25",
+    "aos": "^2.3.4",
     "aws-sdk": "^2.1465.0",
     "axios": "^1.5.1",
     "classnames": "^2.3.2",
@@ -53,6 +54,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/aos": "^3.0.7",
     "@types/classnames": "^2.3.1",
     "@types/js-cookie": "^3.0.3",
     "@types/node-sass": "^4.11.3",

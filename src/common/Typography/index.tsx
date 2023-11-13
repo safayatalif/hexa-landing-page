@@ -4,6 +4,7 @@ import styles from './Typography.module.scss';
 
 export interface TypographyProps {
     variant:
+        | 'title-3xl-semibold'
         | 'title-2xl-semibold'
         | 'title-2xl-medium'
         | 'title-xl-semibold'

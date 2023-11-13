@@ -7,6 +7,19 @@
 }
 
 // text styling
+.title-3xl-semibold {
+    font-size: 164px;
+    font-weight: 600;
+    line-height: 164px;
+    letter-spacing: -2.16px;
+
+    @media screen and (max-width: $tablet-screen) {
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -1.8px;
+    }
+}
+
 .title-2xl-semibold {
     font-size: 72px;
     font-weight: 600;

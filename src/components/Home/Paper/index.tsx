@@ -13,7 +13,16 @@ export const Paper: React.FC = () => {
     return (
         <div className={styles.paperContainer}>
             <div className={styles.paperBoxContainer}>
-                <div className={styles.paperBox2}>
+                <div
+                    data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    className={styles.paperBox2}
+                >
                     <div className={styles.boxTwoText}>
                         <Typography variant="title-md-semibold">
                             Past paper database
@@ -29,7 +38,16 @@ export const Paper: React.FC = () => {
                         alt=""
                     />
                 </div>
-                <div className={styles.paperBox1}>
+                <div
+                    data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    className={styles.paperBox1}
+                >
                     <img className={styles.paperBoxImage} src={Timer} alt="" />
                     <div className={styles.paperBoxText}>
                         <Typography variant="title-md-semibold" color="grey">
@@ -46,7 +64,16 @@ export const Paper: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.metricsBoxContainer}>
+            <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                className={styles.metricsBoxContainer}
+            >
                 <div className={styles.metricsBox1}>
                     <Typography variant="title-md-semibold">
                         Sorting Metrics
@@ -85,7 +112,15 @@ export const Paper: React.FC = () => {
                     />
                 </div>
             </div>
-            <div>
+            <div
+                data-aos="zoom-in-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+            >
                 <img
                     className={styles.BoxContainerImage}
                     src={BoxContainer}

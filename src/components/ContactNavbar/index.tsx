@@ -1,32 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HexaBetaLogo } from '../../assets';
 import { Button, Typography } from '../../common';
-import styles from './HomeNavbar.module.scss';
+import styles from './ContactNavbar.module.scss';
 
-const HomeNavbar: React.FC = () => {
+const ContactNavbar: React.FC = () => {
     const [isNavActive, setNavActive] = useState(false);
 
     const toggleNavbar = () => {
         setNavActive(!isNavActive);
     };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const navbar = document.querySelector(`.${styles.navbarContainer}`);
-            if (navbar && window.scrollY > 1550) {
-                navbar.classList.add(styles.scrolled);
-            } else if (navbar) {
-                navbar.classList.remove(styles.scrolled);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <div
@@ -109,4 +92,4 @@ const HomeNavbar: React.FC = () => {
     );
 };
 
-export default HomeNavbar;
+export default ContactNavbar;

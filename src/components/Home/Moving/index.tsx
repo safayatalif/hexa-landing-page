@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../../../assets/home/Container.png';
 import Tabs from '../../../assets/home/Tabs.png';
+import lessTabs from '../../../assets/home/lessTabs.png';
 import moving from '../../../assets/home/moving.png';
 import writing from '../../../assets/home/writing.png';
 import { Typography } from '../../../common';
@@ -10,9 +11,27 @@ import styles from './Moving.module.scss';
 export const Moving: React.FC = () => {
     return (
         <>
-            <div className={styles.movingContainer}>
-                <div className={styles.heading}>
-                    <Typography variant="title-2xl-semibold">
+            <div
+                // data-aos="fade-up"
+                // data-aos-offset="200"
+                // data-aos-delay="50"
+                // data-aos-duration="1000"
+                // data-aos-easing="ease-in-out"
+                // data-aos-mirror="true"
+                // data-aos-once="false"
+                className={styles.movingContainer}
+            >
+                <div
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    className={styles.heading}
+                >
+                    <Typography variant="title-2xl-semibold" alignment="center">
                         <span className={styles.heading1}>Moving async.</span>{' '}
                         <br />{' '}
                         <span className={styles.heading2}>
@@ -21,7 +40,16 @@ export const Moving: React.FC = () => {
                     </Typography>
                 </div>
                 <div className={styles.movingBoxContainer}>
-                    <div className={styles.movingBox1}>
+                    <div
+                        data-aos="fade-right"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        className={styles.movingBox1}
+                    >
                         <Typography variant="title-md-semibold">
                             Complimentary notes with each video.
                         </Typography>
@@ -35,7 +63,16 @@ export const Moving: React.FC = () => {
                             alt=""
                         />
                     </div>
-                    <div className={styles.movingBox2}>
+                    <div
+                        data-aos="fade-left"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        className={styles.movingBox2}
+                    >
                         <img
                             className={styles.movingBoxImage2}
                             src={Container}
@@ -51,19 +88,52 @@ export const Moving: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.biteBox}>
+                <div
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    className={styles.biteBox}
+                >
                     <img className={styles.writingImage} src={writing} alt="" />
                 </div>
 
-                <Typography variant="text-xl-regular" alignment="center">
-                    The goal, always, is to try and ensure that you have access
-                    to as many resources as possible, without having to open
-                    another tab, or another website. Which swiftly takes us to
-                    the Practice section.
-                </Typography>
+                <div
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                >
+                    <Typography variant="text-xl-regular" alignment="center">
+                        The goal, always, is to try and ensure that you have
+                        access to as many resources as possible, without having
+                        to open another tab, or another website. Which swiftly
+                        takes us to the Practice section.
+                    </Typography>
+                </div>
 
-                <div>
-                    <img className={styles.TabsImage} src={Tabs} alt="" />
+                <div
+                    data-aos="flip-right"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false"
+                    className={styles.tabsImageContainer}
+                >
+                    <img className={styles.tabsImage} src={Tabs} alt="" />
+                    <img
+                        className={styles.lessTabsImage}
+                        src={lessTabs}
+                        alt=""
+                    />
                 </div>
             </div>
             <TopicalVideo></TopicalVideo>
