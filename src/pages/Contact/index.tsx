@@ -16,38 +16,73 @@ export const Contact: React.FC = () => {
             </div>
             <div className={styles.loginContainer}>
                 <div className={styles.contentContainer}>
-                    <Typography variant="title-sm-medium">
+                    <Typography variant="title-sm-medium" alignment="center">
                         We’d love to hear from you
                     </Typography>
-                    <Typography variant="text-xl-regular" color="grey">
+                    <Typography
+                        variant="text-xl-regular"
+                        color="grey"
+                        alignment="center"
+                    >
                         Share your thoughts with us!
                     </Typography>
                     <div className={styles.formContainer}>
+                        <div className={styles.firstName}>
+                            <label>
+                                <Typography variant="text-sm-medium">
+                                    First name
+                                </Typography>
+                            </label>
+                            <Input
+                                inputType="text"
+                                required={true}
+                                placeholder="First name"
+                                inputClassname={styles.firstNameInput}
+                            />
+                        </div>
+                        <div className={styles.lastName}>
+                            <label>
+                                <Typography variant="text-sm-medium">
+                                    Last name
+                                </Typography>
+                            </label>
+
+                            <Input
+                                inputType="text"
+                                required={true}
+                                placeholder="Last name"
+                                inputClassname={styles.lastNameInput}
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <label>
+                            <Typography variant="text-sm-medium">
+                                Email
+                            </Typography>
+                        </label>
+
                         <Input
-                            inputType="email"
+                            inputType="Email"
                             required={true}
-                            placeholder="Enter your email"
-                            inputClassname={styles.firstNameInput}
-                        />
-                        <Input
-                            inputType="password"
-                            required={true}
-                            placeholder="Enter your password"
-                            inputClassname={styles.lastNameInput}
+                            placeholder="you@company.com"
+                            inputClassname={styles.emailInput}
                         />
                     </div>
-                    <Input
-                        inputType="password"
-                        required={true}
-                        placeholder="Enter your password"
-                        inputClassname={styles.emailInput}
-                    />
-                    <Input
-                        inputType="message"
-                        required={true}
-                        placeholder="Enter your message"
-                        inputClassname={styles.messageInput}
-                    />
+                    <div>
+                        <label>
+                            <Typography variant="text-sm-medium">
+                                Message
+                            </Typography>
+                        </label>
+
+                        <Input
+                            inputType="message"
+                            required={true}
+                            placeholder="Leave us a message..."
+                            inputClassname={styles.messageInput}
+                        />
+                    </div>
 
                     <div className={styles.signupContainer}>
                         <Input
@@ -57,8 +92,10 @@ export const Contact: React.FC = () => {
                             inputClassname={styles.checkInput}
                         />
 
-                        <Typography variant="text-sm-semibold">
-                            You agree to our friendly Privacy Policy and Term
+                        <Typography variant="text-sm-medium" color="grey">
+                            You agree to our friendly{' '}
+                            <a href="">Privacy Policy </a> and{' '}
+                            <a href="">Terms of Use. </a>
                         </Typography>
                     </div>
                     <Button
