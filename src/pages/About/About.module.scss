@@ -18,7 +18,8 @@
 
 .aboutText {
     padding: 36px 222px;
-    > * {
+
+    >* {
         margin: 16px 0;
     }
 }
@@ -38,6 +39,7 @@
 .modalPosition {
     position: absolute;
     top: 0;
+    left: 0;
 }
 
 .journeyContainer {
@@ -55,6 +57,8 @@
     width: 15%;
 }
 
+
+
 .emailDiv {
     width: 35%;
 }
@@ -70,10 +74,12 @@
 @media (max-width: 430px) {
     .aboutText {
         padding: 24px 16px;
-        > * {
+
+        >* {
             margin: 12px 0;
         }
     }
+
     .aboutTeamImage {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -81,6 +87,7 @@
         margin: 20px 16px;
         gap: 10px;
     }
+
     .journeyButton {
         padding: 8px 12px;
         width: 30%;
@@ -99,7 +106,8 @@
 @media (min-width: 431px) and (max-width: 768px) {
     .aboutText {
         padding: 36px 56px;
-        > * {
+
+        >* {
             margin: 16px 0;
         }
     }

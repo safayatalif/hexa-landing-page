@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Modal.module.scss';
+import { Typography } from '../../common';
 
 interface ModalProps {
     imageUrl: string;
@@ -8,10 +9,14 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ imageUrl, closeModal }) => {
     return (
-        <div className={styles.ModalOverlay} onClick={closeModal}>
-            <button onClick={closeModal}>x</button>
+        <div className={styles.ModalOverlay}>
+            <p className={styles.closeButton} onClick={closeModal}>x</p>
             <div className={styles.ModalContent}>
-                <h1>{imageUrl}</h1>
+
+                <Typography variant="text-md-regular" alignment="center">
+                    {imageUrl}
+                </Typography>
+
             </div>
         </div>
     );
