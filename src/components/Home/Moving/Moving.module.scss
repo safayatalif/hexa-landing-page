@@ -3,7 +3,6 @@
 }
 
 .heading {
-    text-align: center;
     margin: 96px 0px;
     .heading1 {
         color: #929294;
@@ -62,16 +61,41 @@
     margin-top: 24px;
     margin-bottom: 46px;
 }
-.TabsImage {
+
+.tabsImageContainer {
+    position: relative;
     width: 100%;
+    height: 96px;
     margin-top: 48px;
-    // margin-bottom: 180px;
+    cursor: pointer;
+}
+
+.lessTabsImage {
+    width: 100%;
+    height: 96px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1.8s ease;
+}
+
+.tabsImageContainer:hover .lessTabsImage {
+    opacity: 1;
+}
+
+.tabsImage {
+    width: 100%;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Mobile Phones */
 @media (max-width: 430px) {
     .movingContainer {
-        margin: 8px 56px;
+        margin: 0px 0px;
     }
 
     .movingBoxContainer {
@@ -83,6 +107,12 @@
 
     .writingImage {
         margin-bottom: 56px;
+    }
+    .lessTabsImage {
+        height: 76px;
+    }
+    .tabsImage {
+        height: 76px;
     }
 }
 
@@ -101,6 +131,13 @@
 
     .writingImage {
         margin-bottom: 56px;
+    }
+
+    .lessTabsImage {
+        height: 76px;
+    }
+    .tabsImage {
+        height: 76px;
     }
 }
 

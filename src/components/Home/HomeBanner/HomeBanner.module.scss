@@ -70,7 +70,7 @@
 }
 
 .bannerBottomHeading {
-    padding: 96px 10px;
+    padding: 56px 0px;
     text-align: left;
     .heading1 {
         background: linear-gradient(45deg, #164c63, #088ab2);
@@ -102,6 +102,8 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+// modal styles
 
 .modal {
     display: none;
@@ -162,6 +164,10 @@
             padding-bottom: 36px;
         }
     }
+
+    .modal {
+        padding-top: 20%;
+    }
 }
 
 /* Tablets */
@@ -178,6 +184,10 @@
             height: 260px;
             padding-bottom: 36px;
         }
+    }
+
+    .modal {
+        padding-top: 20%;
     }
 }
 

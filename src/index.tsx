@@ -10,6 +10,13 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from './app/store';
 import './styles/fonts.scss';
 
+// src/main.ts
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// Initialize AOS
+AOS.init();
+
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );

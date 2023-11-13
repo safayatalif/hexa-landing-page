@@ -1,7 +1,7 @@
 /* Laptops */
 
 .topicalContainer {
-    padding: 76px 222px;
+    padding: 36px 222px;
     .topicalVideoBox {
         position: relative;
         .topicalVideo {
@@ -14,7 +14,7 @@
 
         .topicalText {
             position: absolute;
-            top: 10%;
+            top: 20%;
             left: 7%;
             color: #ffffff;
         }
@@ -31,7 +31,7 @@
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
     .topicalContainer {
-        padding: 36px 56px;
+        padding: 24px 56px;
     }
 }
 

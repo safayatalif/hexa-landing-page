@@ -4,7 +4,8 @@
 .contactBanner {
     background-image: url('../../assets/contact-image/Banner Image.png');
     // width: 1920px;
-    height: 434px
+    margin-top: 76px;
+    height: 434px;
 }
 
 .loginContainer {
@@ -21,16 +22,14 @@
     align-items: center;
     margin: 140px 0; // can be set to 10% too
 
-    >* {
+    > * {
         margin: 5px 0;
     }
 
     .formContainer {
-
         margin: 20px 0;
         display: flex;
         gap: 20px;
-
     }
 
     .firstNameInput {
@@ -62,7 +61,6 @@
         display: flex;
         // margin-right: 980px;
         gap: 10px;
-
     }
 
     // .checkInput {
@@ -70,8 +68,6 @@
     //     margin-top: 20px;
     // }
     /* Banner Image */
-
-
 
     .continueButton {
         // display: contents;
@@ -82,5 +78,4 @@
         padding: 10px 18px;
         border-radius: 32px;
     }
-
 }
