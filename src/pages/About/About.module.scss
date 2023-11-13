@@ -4,6 +4,7 @@
 .AboutBanner {
     background-image: url('../../assets/about-image/Image.png');
     // width: 1920px;
+    // width: 100%;
     height: 434px;
 
 }
@@ -26,8 +27,48 @@
     display: flex;
     position: relative;
     margin-top: 20px;
-    margin-left: 220px;
+    margin-left: 222px;
+    margin-right: 222px;
     gap: 20px;
 
 
+}
+
+.teamImage {
+    width: 100%;
+}
+
+.modalPosition {
+    position: absolute;
+    top: 0;
+
+}
+
+.textJoin {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.journeyContainer {
+    display: flex;
+    gap: 10px;
+    // margin-top: 30px;
+}
+
+.journeyButton {
+    width: 125px;
+    height: 48px;
+    padding: 12px, 20px;
+    border-radius: 32px;
+    margin-top: 30px;
+}
+
+.emailAddress {
+    width: 400px;
+    margin-top: 30px;
+    height: 44px;
+    padding: 10px, 14px, ;
+    border-radius: 8px;
+    margin-left: 330px;
+    gap: 8px;
 }
