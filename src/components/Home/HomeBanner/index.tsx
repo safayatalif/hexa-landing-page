@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import Quantum from '../../../assets/home/Quantum.png';
 import Velocity from '../../../assets/home/Velocity.png';
 import trailerVideo from '../../../assets/video/cinematic.mp4';
-import { Button, Typography } from '../../../common';
+import { Button, Input, Typography } from '../../../common';
 import { VideoPlayer } from '../../VideoPlayer';
-import HomeSignUp from '../HomeSignUp';
 import styles from './HomeBanner.module.scss';
 
 export const HomeBanner: React.FC = () => {
     const [isModalVisibleVideo, setModalVisibleVideo] = useState(false);
     const [isModalVisibleSignUp, setModalVisibleSignUp] = useState(false);
+    const [isSubmit, setIsSubmit] = useState(false);
 
     const openModalVideo = () => {
         setModalVisibleVideo(true);
@@ -25,6 +25,7 @@ export const HomeBanner: React.FC = () => {
 
     const closeModalSignUp = () => {
         setModalVisibleSignUp(false);
+        setIsSubmit(false);
     };
 
     return (
@@ -128,12 +129,105 @@ export const HomeBanner: React.FC = () => {
                 </div>
             </div>
             {isModalVisibleSignUp && (
-                <div
-                    className={`${styles.modal} ${styles.visible}`}
-                    onClick={closeModalSignUp}
-                >
+                <div className={`${styles.modal} ${styles.visible}`}>
                     <div className={styles.modalContainer}>
-                        <HomeSignUp></HomeSignUp>
+                        {isSubmit ? (
+                            <div className={styles.completedContainer}>
+                                <div className={styles.contentContainer}>
+                                    <Typography
+                                        variant="title-xl-semibold"
+                                        color="white"
+                                    >
+                                        Completed!
+                                    </Typography>
+                                    <Typography
+                                        variant="text-xl-regular"
+                                        color="grey"
+                                    >
+                                        Thank you for showing your interest in
+                                        the beta launch. We’ll get back to you
+                                        shortly whenever appropriate.
+                                    </Typography>
+                                    <div className={styles.formContainer}>
+                                        <div
+                                            className={styles.continueButtonDiv}
+                                        >
+                                            <Button
+                                                onClick={closeModalSignUp}
+                                                styleType="outline"
+                                                className={
+                                                    styles.continueButton
+                                                }
+                                                // onClick={handleLogin}
+                                            >
+                                                <Typography
+                                                    variant="text-md-semibold"
+                                                    color="white"
+                                                >
+                                                    Go back to Homepage
+                                                </Typography>
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ) : (
+                            <div className={styles.homeSignUpContainer}>
+                                <div className={styles.contentContainer}>
+                                    <Typography
+                                        variant="title-xl-semibold"
+                                        color="white"
+                                    >
+                                        Sign up for Beta
+                                    </Typography>
+                                    <Typography
+                                        variant="text-xl-regular"
+                                        color="grey"
+                                    >
+                                        Take an exclusive first look into the
+                                        product
+                                    </Typography>
+                                    <div className={styles.formContainer}>
+                                        <Input
+                                            inputType="text"
+                                            required={true}
+                                            placeholder="Enter your full name"
+                                            inputClassname={styles.nameInput}
+                                            // onChange={handleEmailInput}
+                                        />
+                                        <Input
+                                            inputType="email"
+                                            required={true}
+                                            placeholder="Enter your email"
+                                            inputClassname={styles.emailInput}
+                                            // onChange={handleEmailInput}
+                                        />
+
+                                        <div
+                                            className={styles.continueButtonDiv}
+                                        >
+                                            <Button
+                                                onClick={() =>
+                                                    setIsSubmit(true)
+                                                }
+                                                styleType="primary"
+                                                className={
+                                                    styles.continueButton
+                                                }
+                                                // onClick={handleLogin}
+                                            >
+                                                <Typography
+                                                    variant="text-md-semibold"
+                                                    color="white"
+                                                >
+                                                    Submit
+                                                </Typography>
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                         <button
                             className={styles.closeBtn}
                             onClick={closeModalSignUp}
@@ -144,10 +238,7 @@ export const HomeBanner: React.FC = () => {
                 </div>
             )}
             {isModalVisibleVideo && (
-                <div
-                    className={`${styles.modal} ${styles.visible}`}
-                    onClick={closeModalVideo}
-                >
+                <div className={`${styles.modal} ${styles.visible}`}>
                     <div className={styles.modalContainer}>
                         <VideoPlayer
                             overlayText="Play Video"

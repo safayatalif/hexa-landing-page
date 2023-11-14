@@ -15,6 +15,7 @@ import ContactNavbar from '../../components/ContactNavbar';
 export const About: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [clickedImage, setClickedImage] = useState('');
+    const [buttonText, setButtonText] = useState('Count me in');
 
     const openModal = (imageSrc: string, details: string) => {
         setIsModalOpen(true);
@@ -190,9 +191,13 @@ export const About: React.FC = () => {
                     />
                 </div>
 
-                <Button styleType="primary" className={styles.journeyButton}>
+                <Button
+                    onClick={() => setButtonText('Amazing, Check your mail!')}
+                    styleType="primary"
+                    className={styles.journeyButton}
+                >
                     <Typography variant="text-md-semibold" color="white">
-                        Count me in
+                        {buttonText}
                     </Typography>
                 </Button>
             </div>

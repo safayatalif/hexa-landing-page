@@ -2,7 +2,6 @@ export * from './ContactNavbar';
 export * from './Footer';
 export * from './Home/CinematicVideo';
 export * from './Home/HomeBanner';
-export * from './Home/HomeSignUp';
 export * from './Home/IntroOverlay';
 export * from './Home/Learning';
 export * from './Home/Moving';
