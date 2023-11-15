@@ -1,13 +1,15 @@
 /* Laptops */
 
 .cinematicContainer {
-    padding: 56px 222px;
+    max-width: 996px;
+    margin: auto;
+    margin-top: 196px;
     .cinematicVideoBox {
         position: relative;
 
         .cinematicVideo {
             width: 100%;
-            height: 600px;
+            height: 500px;
             border-radius: 10px;
             object-fit: cover;
             background: #000;
@@ -15,7 +17,7 @@
 
         .cinematicText {
             position: absolute;
-            top: 10%;
+            top: 20%;
             left: 7%;
             color: #ffffff;
         }
@@ -25,18 +27,30 @@
 /* Mobile Phones */
 @media (max-width: 430px) {
     .cinematicContainer {
-        padding: 36px 0px;
+        margin-top: 96px;
+        .cinematicVideoBox {
+            .cinematicText {
+                top: 15%;
+            }
+        }
     }
 }
 
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
     .cinematicContainer {
-        padding: 36px 56px;
+        margin-top: 96px;
+        .cinematicVideoBox {
+            .cinematicText {
+                top: 15%;
+            }
+        }
     }
 }
 
 /* Wide Desktop Screens */
-@media (min-width: 1920px) {
-    /* Your wide desktop-specific styles here */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .cinematicContainer {
+        max-width: 1446px;
+    }
 }

@@ -2,7 +2,6 @@
 @import '../../styles/mixins';
 
 .contactBanner {
-    // height: 50vh;
     height: 100%;
 }
 
@@ -12,10 +11,11 @@
 
 .contentContainer {
     width: 100%;
-    padding: 32px 222px;
 
+    max-width: 996px;
+    margin: 0 auto;
     > * {
-        margin: 16px 0;
+        margin: 24px 0;
     }
 
     .formContainer {
@@ -66,7 +66,7 @@
 }
 
 .thankContainer {
-    margin: 136px auto;
+    padding: 192px 0;
 }
 
 .buttonContainer {
@@ -110,14 +110,8 @@
 }
 
 /* Wide Desktop Screens */
-@media (min-width: 1920px) {
-    /* Your wide desktop-specific styles here */
-}
-
-/* Mobile Phones */
-@media (max-width: 430px) {
-}
-
-/* Tablets */
-@media (min-width: 431px) and (max-width: 768px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .contentContainer {
+        max-width: 996px;
+    }
 }

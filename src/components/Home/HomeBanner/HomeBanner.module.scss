@@ -4,73 +4,76 @@
 /* Laptops */
 
 .bannerContainer {
-    background: #000;
+    background: #000000;
 }
 
 .dualBackground {
-    padding: 76px 222px;
-    margin: auto;
     width: 100%;
     height: 100%;
     background-image: url('../../../assets/home/waves.png');
     background-position: center;
     background-size: cover;
-    opacity: 50%;
-    position: relative;
-
-    .bannerHeading {
-        text-align: center;
-        padding-top: 96px;
-        background: linear-gradient(to right, #e7ffff, #ffffff, #fff3f3);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+    opacity: 90%;
 }
 
 .bannerLaptop {
     width: 100%;
-    height: 1096px;
     background-image: url('../../../assets/home/mockup.png');
     background-position: center;
     background-size: cover;
-    opacity: 80%;
-    backdrop-filter: blur(5px);
-    position: absolute;
-    top: 40%;
-    left: 0;
-}
+    opacity: 75%;
 
-.awardContainer {
-    display: flex;
-    padding: 65% 30% 56px 30%;
-    align-items: center;
-    justify-content: center;
-    .award {
-        margin-top: 56px;
-        width: 100%;
+    z-index: 10;
+    .bannerHeading {
+        max-width: 996px;
         margin: auto;
-        height: 250px;
+        padding-top: 165px;
+        text-align: center;
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1),
+            rgba(0, 0, 0, 0.65)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .bannerButtonContainer {
+        max-width: 996px;
+        margin: auto;
+        text-align: center;
+        margin-top: 24px;
+        .getButton {
+            margin: 10px 12px;
+            padding: 5px 10px;
+            border-radius: 32px;
+        }
+        .watchButton {
+            margin: 10px 12px;
+            padding: 5px 10px;
+            border-radius: 32px;
+        }
+    }
+    .awardContainer {
+        max-width: 996px;
+        gap: 20px;
+        margin: auto;
+        padding: 40% 25% 10% 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .award {
+            width: 100%;
+            margin: auto;
+            height: 300px;
+        }
     }
 }
 
-.bannerButtonContainer {
-    text-align: center;
-    margin-top: 24px;
-}
-
-.getButton {
-    margin: 10px 12px;
-    padding: 5px 10px;
-    border-radius: 32px;
-}
-.watchButton {
-    margin: 10px 12px;
-    padding: 5px 10px;
-    border-radius: 32px;
-}
-
 .bannerBottomHeading {
-    padding: 56px 0px;
+    max-width: 996px;
+    margin: auto;
+    padding-bottom: 76px;
     text-align: left;
     .heading1 {
         background: linear-gradient(45deg, #164c63, #088ab2);
@@ -108,15 +111,16 @@
 .modal {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    transition: opacity 0.3s ease-in-out;
+    // transition: opacity 0.3s ease-in-out;
 
     &.visible {
         display: flex;
@@ -126,14 +130,23 @@
         position: relative;
         width: 100vw;
         height: 100vh;
-        max-width: 80%;
-        max-height: 100%;
+        max-width: 100vw;
+        max-height: 100vh;
         // background: rgb(38, 38, 38);
         // border-radius: 16px;
         transition: transform 0.3s ease-in-out;
 
-        // .videoContainer {
-        // }
+        .videoContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5%;
+        }
+
+        .modalVideo {
+            width: 100%;
+            height: 100%;
+        }
 
         button.closeBtn {
             position: absolute;
@@ -205,75 +218,50 @@
     border-radius: 16px;
 }
 
-// .contentContainer {
-//     width: 100%;
-//     // padding: 32px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin: 140px 0; // can be set to 10% too
-
-//     > * {
-//         margin: 5px 0;
-//     }
-
-//     .formContainer {
-//         width: 100%;
-//         margin: 20px 0;
-
-//         .continueButtonDiv {
-//             display: flex;
-//             justify-content: center;
-//             .continueButton {
-//                 // width: 100%;
-//                 margin: 20px 0;
-//                 padding: 10px 18px;
-//                 border-radius: 32px;
-//             }
-//         }
-//     }
-// }
+.cinematicVideo {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #000;
+}
 
 /* Mobile Phones */
 @media (max-width: 430px) {
-    .dualBackground {
-        padding: 12px 0px;
-    }
-    .awardContainer {
-        display: block !important;
-        padding: 350px 5% 0 5% !important;
-        .award {
-            width: 100%;
-
-            margin: auto;
-            height: 260px;
-            padding-bottom: 36px;
+    .bannerLaptop {
+        .awardContainer {
+            padding: 70% 8% 10% 8% !important;
+            display: block !important;
+            .award {
+                width: 100%;
+                height: 250px;
+            }
         }
     }
 
-    .modal {
-        padding-top: 20%;
+    .bannerBottomHeading {
+        padding: 76px 64px;
     }
 }
 
 /* Tablets */
 @media (min-width: 431px) and (max-width: 768px) {
-    .dualBackground {
-        padding: 36px 56px;
-    }
-    .awardContainer {
-        display: block !important;
-        padding: 350px 10% 0 10% !important;
-        .award {
-            width: 100%;
-            margin: auto;
-            height: 260px;
-            padding-bottom: 36px;
+    .bannerLaptop {
+        padding: 0px 64px;
+        // height: 600px;
+
+        .awardContainer {
+            padding: 70% 8% 10% 8% !important;
+            display: block !important;
+            .award {
+                width: 100%;
+                height: 250px;
+            }
         }
     }
 
-    .modal {
-        padding-top: 20%;
+    .bannerBottomHeading {
+        padding: 76px 64px;
     }
 }
 

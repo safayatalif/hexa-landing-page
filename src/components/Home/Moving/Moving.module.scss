@@ -1,5 +1,6 @@
 .movingContainer {
-    margin: 24px 222px;
+    max-width: 996px;
+    margin: auto;
 }
 
 .heading {
@@ -58,8 +59,7 @@
 
 .writingImage {
     width: 100%;
-    margin-top: 24px;
-    margin-bottom: 46px;
+    margin-bottom: 196px;
 }
 
 .tabsImageContainer {
@@ -67,6 +67,7 @@
     width: 100%;
     height: 96px;
     margin-top: 48px;
+    margin-bottom: 164px;
     cursor: pointer;
 }
 
@@ -94,19 +95,11 @@
 
 /* Mobile Phones */
 @media (max-width: 430px) {
-    .movingContainer {
-        margin: 0px;
-    }
-
     .movingBoxContainer {
         display: inline;
         .movingBox1 {
             margin-bottom: 36px;
         }
-    }
-
-    .writingImage {
-        margin-bottom: 56px;
     }
     .lessTabsImage {
         height: 76px;
@@ -129,15 +122,18 @@
         }
     }
 
-    .writingImage {
-        margin-bottom: 56px;
-    }
-
     .lessTabsImage {
         height: 76px;
     }
     .tabsImage {
         height: 76px;
+    }
+    .writingImage {
+        margin-bottom: 96px;
+    }
+
+    .tabsImageContainer {
+        margin-top: 96;
     }
 }
 

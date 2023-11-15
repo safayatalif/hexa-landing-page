@@ -1,5 +1,6 @@
 .paperContainer {
-    margin: 24px 222px;
+    max-width: 996px;
+    margin: auto;
 }
 
 .paperBoxContainer {
@@ -37,7 +38,7 @@
         position: relative;
         z-index: 20;
         .paperBoxImage2 {
-            width: 90%;
+            width: 60%;
             position: absolute;
             bottom: 0;
             right: 0;

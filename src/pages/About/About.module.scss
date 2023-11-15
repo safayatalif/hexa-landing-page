@@ -2,25 +2,21 @@
 @import '../../styles/mixins';
 
 .aboutBanner {
-    // height: 50vh;
     height: 100%;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 }
 
 .aboutBannerImage {
     width: 100%;
 }
 
-.aboutHeading {
-    text-align: center;
-    margin-top: 30px;
-}
-
 .aboutText {
-    padding: 36px 222px;
+    max-width: 996px;
+    margin: auto;
+    margin-bottom: 192px;
 
     > * {
-        margin: 16px 0;
+        margin: 24px 0;
     }
 }
 
@@ -28,7 +24,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     position: relative;
-    margin: 20px 222px;
+    max-width: 996px;
+    margin: auto;
     gap: 20px;
 }
 
@@ -43,7 +40,9 @@
 }
 
 .journeyContainer {
-    margin: 56px auto;
+    padding: 20px 0px;
+    max-width: 996px;
+    margin: auto;
     display: flex;
     gap: 10px;
     align-items: center;

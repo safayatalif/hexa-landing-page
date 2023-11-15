@@ -1,39 +1,43 @@
 @import '../../styles/variables';
 
-.navbarContainer {
+.navbarContainerMain {
     position: fixed;
-    padding: 0 222px; /* Responsive padding */
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     backdrop-filter: blur(5px);
-    top: 0;
     color: transparent;
     z-index: 100;
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-
-    .hexaBetaLogo {
+    transition: background-color 0.3s ease;
+    .navbarContainer {
+        max-width: 996px;
+        margin: auto;
+        width: 100%;
         display: flex;
-        align-items: center;
-    }
+        justify-content: space-between;
+        /* Smooth transition for background color */
 
-    .continueButton {
-        margin: 0.6em 0.3em;
-        padding: 0.3em 1em;
-        border-radius: 32px;
-    }
-    .loginButton {
-        margin: 0.6em 0.3em;
-        padding: 0.2em 1em;
-        border-radius: 32px;
-        color: #fff;
-    }
+        .hexaBetaLogo {
+            display: flex;
+            align-items: center;
+        }
 
-    .navLink {
-        text-decoration: none;
-        margin: 1em 0.4em;
-        font-weight: 300;
-        color: white;
+        .continueButton {
+            margin: 0.6em 0.3em;
+            padding: 0.3em 1em;
+            border-radius: 32px;
+        }
+        .loginButton {
+            margin: 0.6em 0.3em;
+            padding: 0.2em 1em;
+            border-radius: 32px;
+            color: #fff;
+        }
+
+        .navLink {
+            text-decoration: none;
+            margin: 1em 0.4em;
+            font-weight: 300;
+            color: white;
+        }
     }
 }
 
@@ -44,7 +48,7 @@
 /* Mobile Phones */
 @media (max-width: 430px) {
     .navbarContainer {
-        padding: 0 12px; /* Responsive padding */
+        padding: 0 8px; /* Responsive padding */
     }
 
     .navLinkContainer {
@@ -190,12 +194,15 @@
 }
 
 /* Wide Desktop Screens */
-@media (min-width: 1920px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
     /* Your wide desktop-specific styles here */
+    .navbarContainer {
+        max-width: 1476px;
+    }
 }
 
 /* Change background color on scroll */
-.navbarContainer.scrolled {
+.navbarContainerMain.scrolled {
     background-color: $hexaLightBackground;
     .navLink {
         color: black;
