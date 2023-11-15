@@ -26,6 +26,8 @@
     position: relative;
     max-width: 996px;
     margin: auto;
+    margin-top: 96px;
+    margin-bottom: 196px;
     gap: 20px;
 }
 
@@ -53,11 +55,11 @@
 .journeyButton {
     padding: 10px 8px;
     border-radius: 32px;
-    width: 20%;
+    width: 30%;
 }
 
 .emailDiv {
-    width: 35%;
+    width: 45%;
 }
 
 .emailAddress {
