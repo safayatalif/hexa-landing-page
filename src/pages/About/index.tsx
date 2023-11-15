@@ -27,7 +27,7 @@ export const About: React.FC = () => {
         setClickedImage('');
     };
     return (
-        <>
+        <div className={styles.aboutContainer}>
             {/* <Navbar /> */}
             <ContactNavbar></ContactNavbar>
 
@@ -201,6 +201,6 @@ export const About: React.FC = () => {
                     </Typography>
                 </Button>
             </div>
-        </>
+        </div>
     );
 };

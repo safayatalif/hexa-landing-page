@@ -12,22 +12,19 @@ const ContactNavbar: React.FC = () => {
     };
 
     return (
-        <div
-            className={`${styles.navbarContainer} ${
-                isNavActive ? styles.active : ''
-            }`}
-        >
-            <Link className={styles.hexaBetaLogo} to="/">
-                <img src={HexaBetaLogo} alt="Hexa Beta Logo" />
-            </Link>
-            <div className={styles.navLinkContainer}>
-                <Link className={styles.navLink} to="/about">
-                    About
+        <div className={styles.navbarContainerMain}>
+            <div className={styles.navbarContainer}>
+                <Link className={styles.hexaBetaLogo} to="/">
+                    <img src={HexaBetaLogo} alt="Hexa Beta Logo" />
                 </Link>
-                <Link className={styles.navLink} to="/contact">
-                    Contact
-                </Link>
-                {/* <Button styleType="outline" className={styles.loginButton}>
+                <div className={styles.navLinkContainer}>
+                    <Link className={styles.navLink} to="/about">
+                        About
+                    </Link>
+                    <Link className={styles.navLink} to="/contact">
+                        Contact
+                    </Link>
+                    {/* <Button styleType="outline" className={styles.loginButton}>
                     <Typography variant="text-md-semibold">Login</Typography>
                 </Button>
                 <Button styleType="primary" className={styles.continueButton}>
@@ -35,27 +32,33 @@ const ContactNavbar: React.FC = () => {
                         Create an account
                     </Typography>
                 </Button> */}
-                <Button styleType="primary" className={styles.continueButton}>
-                    <Typography variant="text-md-semibold" color="white">
-                        Join Beta
-                    </Typography>
-                </Button>
-            </div>
-            <div className={styles.dropdownContainer}>
-                <div className={styles.dropdownTrigger} onClick={toggleNavbar}>
-                    {isNavActive ? 'X' : '☰'}
-                    <div
-                        className={`${styles.dropdown} ${
-                            isNavActive ? styles.open : ''
-                        }`}
+                    <Button
+                        styleType="primary"
+                        className={styles.continueButton}
                     >
-                        <Link className={styles.navLink} to="/about">
-                            About
-                        </Link>
-                        <Link className={styles.navLink} to="/contact">
-                            Contact
-                        </Link>
-                        {/* <Button
+                        <Typography variant="text-md-semibold" color="white">
+                            Join Beta
+                        </Typography>
+                    </Button>
+                </div>
+                <div className={styles.dropdownContainer}>
+                    <div
+                        className={styles.dropdownTrigger}
+                        onClick={toggleNavbar}
+                    >
+                        {isNavActive ? 'X' : '☰'}
+                        <div
+                            className={`${styles.dropdown} ${
+                                isNavActive ? styles.open : ''
+                            }`}
+                        >
+                            <Link className={styles.navLink} to="/about">
+                                About
+                            </Link>
+                            <Link className={styles.navLink} to="/contact">
+                                Contact
+                            </Link>
+                            {/* <Button
                             styleType="outline"
                             className={styles.loginButton}
                         >
@@ -74,17 +77,18 @@ const ContactNavbar: React.FC = () => {
                                 Create an account
                             </Typography>
                         </Button> */}
-                        <Button
-                            styleType="primary"
-                            className={styles.continueButton}
-                        >
-                            <Typography
-                                variant="text-md-semibold"
-                                color="white"
+                            <Button
+                                styleType="primary"
+                                className={styles.continueButton}
                             >
-                                Join Beta
-                            </Typography>
-                        </Button>
+                                <Typography
+                                    variant="text-md-semibold"
+                                    color="white"
+                                >
+                                    Join Beta
+                                </Typography>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>

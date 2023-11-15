@@ -1,14 +1,15 @@
 .oneStepImage {
-    margin-top: 36px;
+    margin-top: 24px;
     margin-bottom: 36px;
     width: 100%;
 }
 .learnContainer {
-    margin: 24px 222px;
+    max-width: 996px;
+    margin: auto;
 
     .learnImageBox {
-        margin-top: 56px;
-        margin-bottom: 56px;
+        margin-top: 196px;
+        margin-bottom: 196px;
         width: 100%;
         height: 100%;
         background: url('../../../assets/learn/justonecourse.png');
@@ -26,6 +27,108 @@
             }
         }
     }
+}
+
+// modal styles
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+
+    &.visible {
+        display: flex;
+    }
+
+    .modalContainer {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100vw;
+        max-height: 100vh;
+        // background: rgb(38, 38, 38);
+        // border-radius: 16px;
+        transition: transform 0.3s ease-in-out;
+
+        // .videoContainer {
+        // }
+
+        button.closeBtn {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background: none;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    }
+}
+
+.homeSignUpContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(38, 38, 38);
+    border-radius: 16px;
+}
+
+.contentContainer {
+    width: 70%;
+    // padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 0; // can be set to 10% too
+
+    > * {
+        margin: 5px 0;
+    }
+
+    .formContainer {
+        width: 100%;
+        margin: 20px 0;
+
+        .nameInput {
+            width: 100%;
+            border-radius: 8px;
+            background: none;
+        }
+        .emailInput {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 24px;
+            background: none;
+        }
+
+        .continueButtonDiv {
+            display: flex;
+            justify-content: center;
+            .continueButton {
+                // width: 100%;
+                margin: 20px 0;
+                padding: 10px 18px;
+                border-radius: 32px;
+            }
+        }
+    }
+}
+
+.completedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(38, 38, 38);
+    border-radius: 16px;
 }
 
 /* Mobile Phones */
